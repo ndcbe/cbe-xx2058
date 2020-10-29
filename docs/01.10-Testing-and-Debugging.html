@@ -1,8 +1,10 @@
+
+<!-- jinja2 template extends `full` to include cell tags in the html rendering of notebooks -->
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>toc</title>
+<title>Notebook</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,183 +13115,2008 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+
+    
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="cbe-xx258"><a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a><a class="anchor-link" href="#cbe-xx258">&#182;</a></h1><h2 id="Chapter-1.0-Python-Primer"><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">Chapter 1.0 Python Primer</a><a class="anchor-link" href="#Chapter-1.0-Python-Primer">&#182;</a></h2><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.1-Why-Python?">1.0.1 Why Python?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.2-Chapter-Learning-Objectives">1.0.2 Chapter Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.3-Activities">1.0.3 Activities</a></li>
-<li>Markdown Figures<ul>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-1-768x633.png">image1</a></li>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-2-768x636.png">image2</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum"><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a><a class="anchor-link" href="#1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1-Quick-Python-Introduction">1.1.1 Quick Python Introduction</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.1-Variables">1.1.1.1 Variables</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.2-Execution-Order">1.1.1.2 Execution Order</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.2-Vocareum-Autograder">1.1.2 Vocareum Autograder</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3-Gradescope">1.1.3 Gradescope</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.1-Handwritten-Work">1.1.3.1 Handwritten Work</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.2-Notebooks">1.1.3.2 Notebooks</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.2-Learning-Python-Basics"><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a><a class="anchor-link" href="#1.2-Learning-Python-Basics">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.1-Learning-Objectives">1.2.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2-Hello-World-and-Interactive-Sessions">1.2.2 Hello World and Interactive Sessions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2.1-Command-Line-Mode">1.2.2.1 Command Line Mode</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.3-Comments">1.2.3 Comments</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4-Errors">1.2.4 Errors</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.1-&quot;Good&quot;-Bugs">1.2.4.1 "Good" Bugs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.2-&quot;Bad&quot;-Bugs">1.2.4.2 "Bad" Bugs</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.5-Indentation">1.2.5 Indentation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.6-Input">1.2.6 Input</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7-Variables">1.2.7 Variables</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.1-Integers">1.2.7.1 Integers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.2-Floating-Point-Numbers">1.2.7.2 Floating Point Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.3-Built-in-Mathematical-Functions">1.2.7.3 Built-in Mathematical Functions</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.8-Strings-and-Overloading">1.2.8 Strings and Overloading</a></li>
-</ul>
-<h3 id="1.3-Flow-Control-and-Pseudocode"><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a><a class="anchor-link" href="#1.3-Flow-Control-and-Pseudocode">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.1-Learning-Objectives">1.3.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.2-If-Statements">1.3.2 If Statements</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.3-Iteration-with-While-Loops">1.3.3 Iteration with While Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.4-For-Loops">1.3.4 For Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.5-Pseudocode">1.3.5 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6-Estimate-$\pi$-by-throwing-darts">1.3.6 Estimate $\pi$ by throwing darts</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.1-Governing-Formula">1.3.6.1 Governing Formula</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2-Pseudocode">1.3.6.2 Pseudocode</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.1-Python-Implementation">1.3.6.2.1 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.2-Python">1.3.6.2.2 Python</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.3-Using-Help-to-Learn-More-About-a-Function">1.3.6.3 Using Help to Learn More About a Function</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.4-Another-Solution-Approach---With-Plots">1.3.6.4 Another Solution Approach - With Plots</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.7-TODO:-Add-another-pseudocode-example">1.3.7 TODO: Add another pseudocode example</a></li>
-</ul>
-<h3 id="1.4-Functions,-Scoping,-and-Other-Fun-Stuff"><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a><a class="anchor-link" href="#1.4-Functions,-Scoping,-and-Other-Fun-Stuff">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.1-Learning-Objectives">1.4.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2-Functions">1.4.2 Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.1-Calling-functions">1.4.2.1 Calling functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.2-Return-Values">1.4.2.2 Return Values</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.3-Docstrings-and-Help">1.4.2.3 Docstrings and Help</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.3-Scope">1.4.3 Scope</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.4-Recursion">1.4.4 Recursion</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.5-Modules">1.4.5 Modules</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.6-Files">1.4.6 Files</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7-Example:-High/Low-Guess-My-Number-Game">1.4.7 Example: High/Low Guess My Number Game</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.1-Instructions">1.4.7.1 Instructions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.2-Pseudocode">1.4.7.2 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.3-Python-Implementation">1.4.7.3 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.4-Testing">1.4.7.4 Testing</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.5-List,-Dictionaries,-and-Enumeration"><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a><a class="anchor-link" href="#1.5-List,-Dictionaries,-and-Enumeration">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.1-Learning-Objectives">1.5.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.2-Lists">1.5.2 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3-Dictionaries">1.5.3 Dictionaries</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.1-Example:-Shopping-List">1.5.3.1 Example: Shopping List</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">1.5.3.2 Another Example: Chemical Symbols and Element Names</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.3-Dictionary-of-Dictionaries">1.5.3.3 Dictionary of Dictionaries</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4-Enumerate">1.5.4 Enumerate</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.1-Lists">1.5.4.1 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.2-Dictionaries">1.5.4.2 Dictionaries</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.6-Linear-Algebra-with-Numpy-and-Scipy"><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a><a class="anchor-link" href="#1.6-Linear-Algebra-with-Numpy-and-Scipy">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.1-Learning-Objectives">1.6.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2-NumPy-Arrays">1.6.2 NumPy Arrays</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.1-Getting-Started">1.6.2.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.2-Creating-Arrays-in-Neat-Ways">1.6.2.2 Creating Arrays in Neat Ways</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.3-Operations-on-Arrays">1.6.2.3 Operations on Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.4-Universal-Functions">1.6.2.4 Universal Functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.5-Copying-Arrays">1.6.2.5 Copying Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.6-Indexing,-Slicing,-and-Iterating">1.6.2.6 Indexing, Slicing, and Iterating</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.7-Complex-Numbers">1.6.2.7 Complex Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.8-Integrating-Everything-Together">1.6.2.8 Integrating Everything Together</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.7-Visualization-with-matplotlib"><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html">1.7 Visualization with matplotlib</a><a class="anchor-link" href="#1.7-Visualization-with-matplotlib">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.1-Learning-Objectives">1.7.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2-Matplotlib-Basics">1.7.2 Matplotlib Basics</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.1-3b-i.-Customizing-Plots">1.7.2.1 3b-i. Customizing Plots</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.2-3b-ii.-Plotting-multiple-lines">1.7.2.2 3b-ii. Plotting multiple lines</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.3-Publication-Quality-Figures">1.7.3 Publication Quality Figures</a></li>
-</ul>
-<h3 id="1.8-Manipulating-Data-with-Pandas"><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html">1.8 Manipulating Data with Pandas</a><a class="anchor-link" href="#1.8-Manipulating-Data-with-Pandas">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.1-Learning-Objectives">1.8.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2-Working-with-Data-Using-Pandas">1.8.2 Working with Data Using Pandas</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.1-Loading-and-Inspecting-Data">1.8.2.1 Loading and Inspecting Data</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.2-Computing-Summary-Statistics">1.8.2.2 Computing Summary Statistics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.3-Combining-Pandas-and-Matplotlib">1.8.2.3 Combining Pandas and Matplotlib</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3-Investment-Strategies">1.8.3 Investment Strategies</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.1-Getting-Started">1.8.3.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.2-Portfolio-Calculator">1.8.3.2 Portfolio Calculator</a></li>
-</ul>
-</li>
-<li>Markdown Links<ul>
-<li><a href="http://highered.mheducation.com/sites/0073401331/student_view0/data_sets.html">the publisher</a></li>
-<li><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html">10 minutes to pandas</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.9-Functions-as-Arguments"><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a><a class="anchor-link" href="#1.9-Functions-as-Arguments">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.1-Learning-Objectives">1.9.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2-Functions-passed-to-Functions">1.9.2 Functions passed to Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.1-Motivating-Example:-Midpoint-Integration">1.9.2.1 Motivating Example: Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.2-Convergence-Analysis">1.9.2.2 Convergence Analysis</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.3-A-Fancier-Integration-Function">1.9.2.3 A Fancier Integration Function</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3-Lambda-Functions">1.9.3 Lambda Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.1-Example:-Lambda-Functions-and-Midpoint-Integration">1.9.3.1 Example: Lambda Functions and Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.2-4c-ii.-Extension-to-Two-Dimensional-Functions">1.9.3.2 4c-ii. Extension to Two Dimensional Functions</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.10-Testing-and-Debugging-in-Python"><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html">1.10 Testing and Debugging in Python</a><a class="anchor-link" href="#1.10-Testing-and-Debugging-in-Python">&#182;</a></h3>
-<pre><code>- [1.10.1 Learning Objectives](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Learning-Objectives)
-</code></pre>
+<p><!--NOTEBOOK_HEADER--><em>This notebook contains material for CBE 20258 Numerical and Statistical Analysis taught at the University of Notre Dame. (c) Professors Alexander Dowling, Ryan McClarren, and Yamil Colón. This page <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a> in addition to the entire course contents are available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a> | <a href="toc.html">Contents</a> | &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.10-Testing-and-Debugging.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.10-Testing-and-Debugging-in-Python">1.10 Testing and Debugging in Python<a class="anchor-link" href="#1.10-Testing-and-Debugging-in-Python">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Reference</strong>: Chapter 6 of <em>Computational Nuclear Engineering and Radiological Science Using Python</em>, R. McClarren (2018)</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1-Learning-Objectives">1.10.1 Learning Objectives<a class="anchor-link" href="#1.10.1-Learning-Objectives">&#182;</a></h3><p>After studying this notebook, completing the activities, and asking questions in class, you should be able to:</p>
 <ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Testing-Your-Code">1.10.1 Testing Your Code</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">1.10.1.1 Test 0: Takes Inputs as Advertised?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.2-Test-1:-Initial-Condition">1.10.1.2 Test 1: Initial Condition</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.3-Test-2:-Asymptotics">1.10.1.3 Test 2: Asymptotics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.4-Test-3:-Check-a-Few-Inputs">1.10.1.4 Test 3: Check a Few Inputs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Debugging-is-a-Mindset">1.10.1 Debugging is a Mindset</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.2-Test-2">1.10.2 Test 2</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.3-Test-3">1.10.3 Test 3</a></li>
-</ul>
-</li>
+<li>Create <code>assert</code> statements and <code>try</code>-<code>except</code> blocks of code</li>
+<li>Embrace the "debugging mindset" and test code you write it. We strongly recommend creating a handful of unit tests for each function you write, especially for complex codes (e.g., mini-projects)</li>
 </ul>
 
 </div>
 </div>
 </div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.10.1-Testing-Your-Code">1.10.1 Testing Your Code<a class="anchor-link" href="#1.10.1-Testing-Your-Code">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Anytime you write code, you want to make sure that it accomplishes the desired task.</p>
+<h3 id="Motivating-Example">Motivating Example<a class="anchor-link" href="#Motivating-Example">&#182;</a></h3><p>Through an example, we will demonstrate several strategies for systematically testing code.</p>
+<p>Phenolphthalein is a base indicator (it turns a pretty purple), but in the presence of a strong base it will fade over time.  This is a reversible reaction: pseudo first order in the forward (fading) direction and first order in the reverse direction.  The rate expression is:</p>
+$$
+\frac{d[P]}{dt} = -k_{1}[P][OH^-]+k_{2}[POH] ~,
+$$<p>where $k_{1}' = k_{1}  \cdot [OH^-]$ is the pseudo first order rate. $[POH]$ is only produced from this reaction, thus we have the mass balance:</p>
+$$
+[POH] = [POH]\Big|_{t=0}+([P]_{0}-[P]) ~.
+$$<p>With the initial conditions:</p>
+$$
+[P]\Big|_{t=0}=[P]_{0}\qquad; \qquad [POH]\Big|_{t=0}=0 ~.
+$$<p>We can solve these equations to get the solution:</p>
+$$
+[P] = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}e^{-(k_{1}'+k_{2})t}\Big) ~.
+$$<p>Let's examine a Python function to calculate the solution.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">P_conc</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein</span>
+<span class="sd">        k1prime: forward reaction rate constant</span>
+<span class="sd">        k2: reverse reaction rate constant</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">*</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will now go through several tests to see if our function behaves correctly. <em>Note:</em> There are a few intentional mistakes above to make this exercise more interesting.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">1.10.1.1 Test 0: Takes Inputs as Advertised?<a class="anchor-link" href="#1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">&#182;</a></h3><p>Does the function return a single value if input t is a scalar and return a numpy array if t is a vector?</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check with scalar t</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">P_conc</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check with vector t</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">P_conc</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1. 1. 1.]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Good. The time input works as advertised.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1.2-Test-1:-Initial-Condition">1.10.1.2 Test 1: Initial Condition<a class="anchor-link" href="#1.10.1.2-Test-1:-Initial-Condition">&#182;</a></h3><p>First, let's check if our function returns the initial condition at $t=0$. From the formula above, we expect:</p>
+$$
+[P]\Big|_{t=0} = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}e^{0}\Big) = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}1\Big) = [P]_0
+$$
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's start by defining a function for this test case. Notice the first input to our function is a function (see Class 4).</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="k">def</span> <span class="nf">test1</span><span class="p">(</span><span class="n">Pfunc</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Initial condition test</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        Pfunc: a Python function to calculate P concentration. Expects 4 inputs.</span>
+<span class="sd">        P0: initial condition to test</span>
+<span class="sd">        k1prime: rate constant to test</span>
+<span class="sd">        k2: rate constrant to test</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Boolean (true or false) indicated if our function passed or failed the test</span>
+<span class="sd">    </span>
+<span class="sd">    Side Effect:</span>
+<span class="sd">        Prints test parameters and message to screen</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Testing initial condition with following specifications:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P0 = &quot;</span><span class="p">,</span><span class="n">P0</span><span class="p">,</span><span class="s2">&quot;  k1prime = &quot;</span><span class="p">,</span><span class="n">k1prime</span><span class="p">,</span> <span class="s2">&quot;  k2 = &quot;</span><span class="p">,</span><span class="n">k2</span><span class="p">)</span>
+    <span class="n">Pcalc</span> <span class="o">=</span> <span class="n">Pfunc</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Calculate value of P = &quot;</span><span class="p">,</span><span class="n">Pcalc</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">Pcalc</span> <span class="o">-</span> <span class="n">P0</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1E-8</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test passed.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something is wrong. You need to debug your code.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By defining this test as a function, we can quickly test several values for the input parameters.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test1</span><span class="p">(</span><span class="n">P_conc</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+
+<span class="n">test1</span><span class="p">(</span><span class="n">P_conc</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Testing initial condition with following specifications:
+P0 =  1.0   k1prime =  1.0   k2 =  1.0
+Calculate value of P =  1.0
+Test passed.
+
+Testing initial condition with following specifications:
+P0 =  5.0   k1prime =  1.0   k2 =  0.001
+Calculate value of P =  5.000000000000001
+Test passed.
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(255,0,0,0.05) ; padding: 10px; border: 1px solid darkred;"> 
+<b>Tutorial Activity</b>: Take a few minutes to try a few more inputs. For example, $P_0$ = 10, $k_1' = 0.0001$ and $k_2$ = 0.3. Can you find a set of inputs that causes the test to fail?
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1.3-Test-2:-Asymptotics">1.10.1.3 Test 2: Asymptotics<a class="anchor-link" href="#1.10.1.3-Test-2:-Asymptotics">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's examine the solution again, but consider $t \rightarrow \infty$.</p>
+$$
+[P]\Big|_{t\rightarrow\infty} = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}e^{-\infty}\Big) = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}0\Big) = [P]_0 \Big(\frac{k_{2}}{k_{1}'+k_{2}} \Big)
+$$<p>Let's start by plotting $[P]$ as a function of time and see if it converges:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1">#this line is only needed in iPython notebooks</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+
+<span class="k">def</span> <span class="nf">test2</span><span class="p">(</span><span class="n">Pfunc</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Asymptotics test</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        Pfunc: a Python function to calculate P concentration. Expects 4 inputs.</span>
+<span class="sd">        P0: initial condition to test</span>
+<span class="sd">        k1prime: rate constant to test</span>
+<span class="sd">        k2: rate constrant to test</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Boolean (true or false) indicated if our function passed or failed the test</span>
+<span class="sd">    </span>
+<span class="sd">    Side Effect:</span>
+<span class="sd">        Creates a plot. Prints if test passed or failed.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1"># Generate 20 points from 10^-2 to 10^4</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P_conc</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="n">P_infty</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    <span class="c1"># plot calculated value</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;function&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># plot calculated asymptotic value</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">semilogx</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">P_infty</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)),</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;$([P]_0 \cdot k_</span><span class="si">{2}</span><span class="s2">) / (k_</span><span class="si">{1}</span><span class="s2">&#39;+k_</span><span class="si">{2}</span><span class="s2">)$&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># label plot</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time (units not given)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$[P]$ (units not given)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;$[P]_0$ = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">P0</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;    $k_1&#39;$ = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k1prime</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;    $k_2$ = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k2</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+    <span class="c1"># check if solution converges to asymptotic value</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">P</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">P_infty</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1E-6</span><span class="p">:</span>
+        <span class="c1"># Note: P[-1] accesses the last value in array P</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test Passed.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test Failed. Either debug code or increase time in test.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    
+<span class="n">test2</span><span class="p">(</span><span class="n">P_conc</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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DSM81eYahl1NNA1Kl1aNufuCHnz2+3Np1SSmQnnJk+bGmMCzhGEapIgIYd/hAq9lWTl5hNKRszH1hSUM02AlJcZXWnbd81+TeeBoHUZjTOizhGEarIkjehBfrs+P+OgIRqcls3zrfi7456fMWrKV4vKdjhhTx9588023QwgISximwUpPTeah0X1JToxH8LRr9NDofvzf2AEs+O05DOrcgvvf/paxM75k857DbodrKpGXl8fPfvYzvv/+e+Lj4080NAgwY8YM2rVrx4ABA+jatSszZ84kLy+PAQMGEBMTw969e2u0zY8//phrr7222vkKCgo455xzKrQtNWHCBL744osTsRcVFVW63s2bN7NgwYIaxelvzJXFGyiWMEyDlp6azBeThvHD1Iv5YtKwMs2SzLr+VP7xi/5szj7MRY99xhOLNlNYB62rGv8899xzjB49msjISE466aQTTY4DZGRk8MADD7B69WreeOMN7r77buLj41m9ejVJSUk13uaaNWvKNBtSmZiYGIYPH85rr71WZvrSpUsZMmRImdgrW++CBQuq7V9j8eLFjB8/vtYxVxZvoFjCMCFLRBgzMIUPf/szzu/dlmnzN/Lzx78gIzPX7dBMKS+99BKXXnqp17K1a9fSs2dPAFJSUk78kq+tki/fY8eOMX78eO67775Kb5RIT08v033s+vXr6d69O5GRkRVi97ZeEQnI7cu+xlw+3kCyB/dMyGudEMsTV6fx8/4/MmXuN6Q/+QU3nd2F357Xvdp+z8PK0KEVp40dC7fdBkePwkUXVSwfP94z7N0Ll19etqxU50WVKSgoYMuWLXTu3JmtW7dWKM/IyKBXr16oKtOnT2fUqFE+VKSso0ePEh8fX6ZZmbVr19KmTRtGjBjBTTfdxLhx4ypdvk+fPnz99dcnxt9//30uvPDCMrHXZL3+8nXd5eMNJEsYJmyM6N2OIV1b8tB765nxyRYWfLubi/u2481VO+1JcZfs3buXxMREr2U7duzg8OHDjBgxgujoaAYPHswTTzxRYb4jR45w2223ERMTw9ChQ7nmmmvKlHft2pWlS5ee+GIvLCxky5YtXHXVVcyYMYPTT/f05zF37lzeffddDh48yI033sgFF1wAePrHiImJ4dChQyQkJDB//nyef/75CrFXtt6qnHbaaRw7dozDhw+zf//+E9dvHn74YUaMGFHl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
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test Passed.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1.4-Test-3:-Check-a-Few-Inputs">1.10.1.4 Test 3: Check a Few Inputs<a class="anchor-link" href="#1.10.1.4-Test-3:-Check-a-Few-Inputs">&#182;</a></h3><p>We can calculate with pencil, paper and a calculator values for $[P]$ for a few sets of inputs. We can then test if our Python code is close.</p>
+<p>For simplicity, let's consider $t=1$, $P[0] = 1$, $k_1' = 1$, $k_2 = 1$.</p>
+$$-(k_{1}'+k_{2})t = - (1 + 1) \cdot (1) = -2$$$$e^{-2} \approx 0.13534$$$$\frac{k_{2}}{k_{1}'+k_{2}} = \frac{1}{1 + 1} = 0.5$$$$\frac{k_{1}}{k_{1}'+k_{2}} = \frac{1}{1 + 1} = 0.5$$<p>Combine it all together:</p>
+$$
+[P] = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}e^{-(k_{1}'+k_{2})t}\Big) = (1) \left(0.5 + 0.5 \cdot e^{-2} \right) \approx 0.56766
+$$<p><em>Hint:</em> Remember, do not use an exact equality with floating point numbers. Instead, we check if the answers agree within a tolerance. See Class 1 for more details.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define test 3 as a function</span>
+<span class="k">def</span> <span class="nf">test3</span><span class="p">(</span><span class="n">Pfunc</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Test function for known solution with t=1, [P0] = 1, k1prime = 1, k2 = 1</span>
+<span class="sd">    </span>
+<span class="sd">    Arg:</span>
+<span class="sd">        Pfunc: a Python function to calculate P concentration. Expects 4 inputs.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Boolean (true or false) indicated if our function passed or failed the test</span>
+<span class="sd">    </span>
+<span class="sd">    Side Effect:</span>
+<span class="sd">        Prints test parameters and message to screen</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="c1"># Notice how using the keyword arguments makes the code very clear</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">Pfunc</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">k1prime</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">k2</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">P</span> <span class="o">-</span> <span class="mf">0.56766764161</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">1E-6</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed Test 3.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Failed Test 3. Recreate your calculations and debug your code.&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+<span class="c1"># Run test   </span>
+<span class="n">test3</span><span class="p">(</span><span class="n">P_conc</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Failed Test 3. Recreate your calculations and debug your code.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.10-Debugging">1.10 Debugging<a class="anchor-link" href="#1.10-Debugging">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we've identified that our code has a bug, the process of finding that error is called debugging. Given that we ran three tests, and two of them passed we can use how the tests are different to identify where the bug might be.</p>
+<p>We'll repeat the formula and function again:</p>
+$$
+[P] = [P]_{0}\Big(\frac{k_{2}}{k_{1}'+k_{2}}+\frac{k_{1}'}{k_{1}'+k_{2}}e^{-(k_{1}'+k_{2})t}\Big) ~.
+$$
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">P_conc</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein</span>
+<span class="sd">        k1prime: forward reaction rate constant</span>
+<span class="sd">        k2: reverse reaction rate constant</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">*</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.1-Debugging-is-a-Mindset">1.10.1 Debugging is a Mindset<a class="anchor-link" href="#1.10.1-Debugging-is-a-Mindset">&#182;</a></h3><p>To properly identify the bug you need to think about</p>
+<ol>
+<li> How is the code failing?
+<li> What is the code doing correctly?
+<li> What pieces of the code are most likely to have an error?
+</ol><p>Moreover, your best tool for debugging is the <tt>print</tt> function.  When in doubt have the code print out what happens after every line and check that with your intuition/expectation.</p>
+<p><b>When in doubt, print it (all) out!</b></p>
+<p>Notice that we used the <code>LOUD</code> keyword to help us quick toggle print statements on and off. You should always use this trick in this class.</p>
+<p>Let's use the print statements to walk through the tests.</p>
+<h3 id="Test-1">Test 1<a class="anchor-link" href="#Test-1">&#182;</a></h3><p><strong>Test 1</strong> checks that we get the initial condition at $t=0$. We expect that <code>prexpon</code> evaluates to 0.0 and <code>expon</code> evaluates to 1.0. Let's see if this is happening:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">P_conc</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">k1prime</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">LOUD</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>frac1 =  0.5
+frac2 =  0.5
+pre_expon =  -0.0
+expon =  1.0
+P =  1.0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With <code>expon</code> at 1.0, <strong>Test 1</strong> checks that <code>frac1</code> and <code>frac2</code> sum to 1.0, which they do. Thus, it makes sense that <strong>Test 1</strong> passes.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.2-Test-2">1.10.2 Test 2<a class="anchor-link" href="#1.10.2-Test-2">&#182;</a></h3><p><strong>Test 2</strong> checks for the correct properties as $t \rightarrow \infty$. Let's look at the output with <code>t</code> set to a huge number.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">P_conc</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">1E7</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">k1prime</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">LOUD</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>frac1 =  0.6666666666666666
+frac2 =  0.3333333333333333
+pre_expon =  -20000000.0
+expon =  0.0
+P =  0.6666666666666666
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6666666666666666</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As expected, with <code>t</code> set to $10^7$, <code>expon</code> evaluates to 0.0. This kills <code>frac2</code>. The calculated value for <code>P</code> matches <code>frac1</code>, which we expect.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.10.3-Test-3">1.10.3 Test 3<a class="anchor-link" href="#1.10.3-Test-3">&#182;</a></h3><p>Now let's compare the intermediate values we calculated by hand in <strong>Test 3</strong> to those reported below:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">P_conc</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">k1prime</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">k2</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">LOUD</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>frac1 =  0.5
+frac2 =  0.5
+pre_expon =  -1.0
+expon =  0.36787944117144233
+P =  0.6839397205857212
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.6839397205857212</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(255,0,0,0.05) ; padding: 10px; border: 1px solid darkred;"> 
+<b>Tutorial Activity</b>: Examine the output from Tests 1, 2 and 3 above. Find and correct the bug in our code. Then rerun the tests.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Find the bug and fix this function</span>
+<span class="k">def</span> <span class="nf">P_conc_fixed</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein</span>
+<span class="sd">        k1prime: forward reaction rate constant</span>
+<span class="sd">        k2: reverse reaction rate constant</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+
+<span class="c1"># Rerun the tests</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">TEST 1...&quot;</span><span class="p">)</span>
+<span class="n">test1</span><span class="p">(</span><span class="n">P_conc_fixed</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">test1</span><span class="p">(</span><span class="n">P_conc_fixed</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">TEST 2...&quot;</span><span class="p">)</span>
+<span class="n">test2</span><span class="p">(</span><span class="n">P_conc_fixed</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">TEST 3...&quot;</span><span class="p">)</span>
+<span class="n">test3</span><span class="p">(</span><span class="n">P_conc_fixed</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+TEST 1...
+Testing initial condition with following specifications:
+P0 =  1.0   k1prime =  1.0   k2 =  1.0
+Calculate value of P =  1.0
+Test passed.
+
+Testing initial condition with following specifications:
+P0 =  5.0   k1prime =  1.0   k2 =  0.001
+Calculate value of P =  5.000000000000001
+Test passed.
+
+
+TEST 2...
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYwAAAEdCAYAAAAfA1CsAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMi40LCBodHRwOi8vbWF0cGxvdGxpYi5vcmcv7US4rQAAIABJREFUeJzt3Xl8VOX1+PHPyR4gEHZIwiqyyJqAiGsRVESxRrC4YcWlilatrVLBlmpbW/GH/VapG9oq1L0KouICKuCGoOxRFkFkSUAIS8KWkJCc3x9zg1kmyUwyk5vMnPfrdV8z9z53Oc+dZM7c7XlEVTHGGGOqE+F2AMYYYxoGSxjGGGN8YgnDGGOMTyxhGGOM8YklDGOMMT6xhGGMMcYnljCMMcb4xBKGMcYYn1jCaOBEREXkiIj8zYd5F4pIvoh8Xhex1XciskNEUispGyUijes6pvqkqv1jwpMljNDQX1X/ACAizZ0kclhEjorIThG5C0BVhwET6jIwEbldRJaLyDERmVmurIWIvOkkvG0icrU/5bWMqznQHlhfySyPAlGB2l6p7Va6P5xyn+vs8v4JCn/rVNX8Pvx9VflZmIoC/g9hXDcAyFbVNgAicikwV0TeUNVMF+LZCTwIjADiy5U9ARQAbfHE/a6IrFHVb30sr42+wGZVzS9fICI9gc9UNTcA2ymvqv0B/tXZlf0TZP7Wqar5q1tXdZ+FKceOMELPAODrUuPLnNcYF2JBVeeo6lxgX+npzumeMcAUVT2sqp8DbwPX+lIeAP2Ab5xtNRKRl0Vkjog0AYYBMwK0nTIq2x9OHD7X2eX9ExT+1qmq+X1ZV1WfhfHOEkboSQW+AhCRROBvwArgh9qsVETmiUhOJcO8GqyyO3BcVb8rNW0N0NvH8trqC2SISBfgC2AjMEZVDwMJqrq0qoWDsD/Avzq7uX98UoN95G+dqpo/2PsnLNkpqdAzABgtIr8BDgCLgEu0kmaJReRh4AxgK3CDqhZ6m09VRwU4zibAwXLTcoEEH8trqx+gePbPb1T1rZICVX24uoWDsD/Avzq7sn9EZDDwGFAIZAG/DODfjL91qmr+YO+fsGRHGCFERGKBXkBPVW2hqiep6k2ququS+fsDyap6NrABuLwOwz0MNC03rSlwyMfyGhMRAfoAlwFPlU4WLvOnzm7tnx3AMFU9B8+PjEtru71S/K1TVfMHbf+EM0sYoaUPcMSPi9tnAAuc9x8AZ1Y2o4i879x55W14vwaxfgdEicjJpab1B771sbw2ujiv5wF3i8igkgIRaSYiXzn16lPZCoKwP8C/Oruyf1R1l6rmOaMFQHFlK6nBPvK3TlXNH8z9E75U1YYGPOA5bdDNeX8T8EU1848HPnfe3wekO++7AS8HIb4oIA54CHjBeR/llL0KvAI0xpOscoHepZatsrwWMaWX7Cfn/Q6gvTMeDbQGZgJ96nJ/+FtnN/ZPqXk6AV8C0QHeP37Vqar5ffj7qvKzsMHL/nY7ABtq+QGWTRiPAzOqmb90wrgNzzlogIHA40GI7wEnxtLDA05ZC2AucATYDlxdbtkqy2sR0xQ8p1pKjy8D4kpNC1bCqHR/VFdn4H3gPrf3D55TO58CPYKwf6r7m/B5H/iwrio/CxsqDuLsONNAiUg+cAyYrqpTqpn3Q2AI8JWqDheRAcDvVPWXInIf8IOqvhL8qOs/50GuR1T1G7djqU9EJArP7an/UNWP3Y7H1C27S6qBU9U4P+Y9v9z4ahHZLSKf4fkF9kig4zMh5yrgNGCKiJQcibzmckymjtgRhjFe2BGGMRXZXVLGlCMi7wEXAM+KyHiXwzGm3rAjDGOMMT6xIwxjjDE+sYRhjDHGJyF1l1SrVq20c+fObodhjDENyooVK/aqauvq5guphNG5c2eWL1/udhjGGNOgiMg2X+azU1LGGGN8YgnDGGOMTyxhGGOM8UmdXcMQkeeAUcAeVe3jTGsBvAZ0xtO2/lhVPeC0x/8YcBFwFBivqivrKlZjwkFhYSGZmZnk59d1t93GLXFxcaSkpBAdHV2j5evyovdMPK2p/rfUtEnAx6o6VUQmOeP3AiOBk53hNOAp5zXg5q7KYtr8jezMySMpMZ6JI3qQnpocjE0ZU69kZmaSkJBA586d8fxGM6FMVdm3bx+ZmZl06dKl+gW8qLOEoaqfikjncpMvBYY672cBi/EkjEuB/6rnMfSlIpIoIu21kp7jamruqiwmz8kgr7AIgKycPCbPyQDwOWnUNuG4vbwJX/n5+ZYswoiI0LJlS7Kzs2u8Drdvq21bKgn8CLR13ifj6bSlRKYzLaAJY9r8jSeSRYm8wiL+Om8drZrEEhEBESJERggRIkQIpd4Ln3y3h0c/2sSx455Ox7Jy8pg0ey2HjhXy837JREUKUZFCdEQEEREV/ylrm7DqQ8IzDZsli/BS28/b7YRxgqqqiPjdsJWI3AzcDNCxY0e/lt2Zk+d1+r4jBYz7zzJ/QwEg/3gxU+Z+y5S5ZXuCFIHoiAhPEokQoiMjOHC0gOJyNc4rLOLe2Wt5Z81OYqMjiIuKJDY6krjoCOKiI4mN8rzGRUXw6EebvCa8qe9v4MI+7YiLjqwy1kAkHGNqY/r06Tz11FOkpaXx0ksv1Xp9W7duZcmSJVx99dUALF++nP/+979Mnz691us27ieM3SWnmkSkPbDHmZ4FdCg1X4ozrQJVfQZ4BmDQoEF+JZykxHiyvCSNVk1iePKagRSrUlysFKlSrHjeF6tnuioTXqz8OvyUUadwvKiY48VKYVExRcVKYZGWmfbSsu1elz12vJgfD+aTX1jEsePF5BcWc6ywiPzjRRQWVV/FHw/m03PKB8RERdA0Lpqm8VHOazRN46Kc12heXrbNa8KZNn+jHaGYCoLxWT/55JN89NFHpKSkBCTGrVu38vLLL59IGIMGDWLQoEHVLGV85XbCeBu4DpjqvL5VavrtIvIqnovduYG+fgEwcUSPMr+wAeKjI/njxacwuEuLapdPriThJCfGc+NZ1V9UWrwxu9Ll373zbK/LFBXriUQy8rFP2X3wWIV5msVHc/M5XTmYX8jBvOPOayG5eYVk7j/KwXzP+8qST1ZOHhc++ilJifG0bxZHUmI8SYlxtG8WT1KzeNo1iyMmKsKOUMJIMD7rCRMmsGXLFkaOHMn27duZMmUK99xzDwB9+vRh3rx5AIwcOZKzzjqLJUuWkJyczFtvvUV8fDybN29mwoQJZGdnExkZyeuvv86kSZNYv349AwYM4LrrriM1NZVHHnmEefPmsX//fm644Qa2bNlCo0aNeOaZZ+jXrx8PPPAA27dvZ8uWLWzfvp277rqLO++8MwB7LfTU5W21r+C5wN1KRDKB+/Ekiv+JyI3ANmCsM/t7eG6p3YznttrrgxFTyR96TX81VZZwJo7oEbTlIyOExrFRNI6FySN7eV3+zz/vXW0dVJUzpy5kZ27FWyobx0SS0jyenTn5rNp+gANHCyvM0zohlpyjBRWSjr9HKKZ++PM737Ju58FKy1dtz6GgqLjMtLzCIn7/xlpe+cr7kfIpSU25/5Lela7z6aef5oMPPmDRokU8/vjjlc63adMmXnnlFZ599lnGjh3L7NmzGTduHNdccw2TJk3isssuIz8/n+LiYqZOnXoiQQAsXrz4xHruv/9+UlNTmTt3LgsXLuSXv/wlq1evBmDDhg0sWrSIQ4cO0aNHD2699dYa33oayuryLqmrKika7mVeBX4d3Ig80lOTa/zlVtuE4+byIsLvL+zpNeH87bK+ZdaRV1DEztw8duXk//Sak8dry3d4WzVZOXnc8/oa+qc0o19KIj3bJxAbVfX1FFO/lU8W1U0PpC5dujBgwAAABg4cyNatWzl06BBZWVlcdtllgOf5gup8/vnnzJ49G4Bhw4axb98+Dh70JMmLL76Y2NhYYmNjadOmDbt37w7YabJQ4vYpqQavNgnH7eV9TTjxMZGc1LoJJ7VuUmb655v3ej2lFhsVwaINe3hjRSYA0ZFCr/ZN6ZfSjH7JifTr0IyT2yQQGSF2DaSeqOpIAODMqQsrPX362i2n13r7UVFRFBf/lHxKP0wYGxt74n1kZCR5ed5vVqmN8ts4fvx4wLcRCixhhLnaJJzKTqk9NLovlw5IIisnj7WZuazJzGHtjlzeWrWTF5duPzFfu2axbN+fR5Fzq5hdA6m/anv6tTqdO3c+cRpp5cqV/PDDD1XOn5CQQEpKCnPnziU9PZ1jx45RVFREQkIChw4d8rrM2WefzUsvvcSUKVNYvHgxrVq1omnTpgGJP1xYwjA1Vt0RSkrzRqQ0b8RFfdsDnrvMfth3hLWZOazZkctLy7adSBYl8gqLePiDDZYw6pnanj6tzpgxY/jvf/9L7969Oe200+jevXu1y7zwwgvccsst/OlPfyI6OprXX3+dfv36ERkZSf/+/Rk/fjypqakn5n/ggQe44YYb6NevH40aNWLWrFkBiT2chFSf3oMGDVLrD6Ph6DLpXSr76xvRuy1j0lIY2qMNMVHWRmYwrF+/nl69erkdhqlj3j53EVmhqtXef2xHGMY1lT0H0zg2khXbDjD/2920aBzDz/snMSYthT7JTe3JZGNcZAnDuKay8+J/S+/LqH7t+XRTNrNXZPHysu3MXLKV7m2bMDothctSk2nbtPq7YowxgWUJw7imuvPiw3q2ZVjPtuQeLWRexk5mr8hk6vsb+H8fbOCsk1szJi2ZY4XFPPbxJrvLypg6YNcwTIPyw94jzFmZyZyVWV5PZ5XcpWVJo3p2DSM81eYahl1NNA1Kl1aNufuCHnz2+3Np1SSmQnnJk+bGmMCzhGEapIgIYd/hAq9lWTl5hNKRszH1hSUM02AlJcZXWnbd81+TeeBoHUZjTOizhGEarIkjehBfrs+P+OgIRqcls3zrfi7456fMWrKV4vKdjhhTx9588023QwgISximwUpPTeah0X1JToxH8LRr9NDofvzf2AEs+O05DOrcgvvf/paxM75k857DbodrKpGXl8fPfvYzvv/+e+Lj4080NAgwY8YM2rVrx4ABA+jatSszZ84kLy+PAQMGEBMTw969e2u0zY8//phrr7222vkKCgo455xzKrQtNWHCBL744osTsRcVFVW63s2bN7NgwYIaxelvzJXFGyiWMEyDlp6azBeThvHD1Iv5YtKwMs2SzLr+VP7xi/5szj7MRY99xhOLNlNYB62rGv8899xzjB49msjISE466aQTTY4DZGRk8MADD7B69WreeOMN7r77buLj41m9ejVJSUk13uaaNWvKNBtSmZiYGIYPH85rr71WZvrSpUsZMmRImdgrW++CBQuq7V9j8eLFjB8/vtYxVxZvoFjCMCFLRBgzMIUPf/szzu/dlmnzN/Lzx78gIzPX7dBMKS+99BKXXnqp17K1a9fSs2dPAFJSUk78kq+tki/fY8eOMX78eO67775Kb5RIT08v033s+vXr6d69O5GRkRVi97ZeEQnI7cu+xlw+3kCyB/dMyGudEMsTV6fx8/4/MmXuN6Q/+QU3nd2F357Xvdp+z8PK0KEVp40dC7fdBkePwkUXVSwfP94z7N0Ll19etqxU50WVKSgoYMuWLXTu3JmtW7dWKM/IyKBXr16oKtOnT2fUqFE+VKSso0ePEh8fX6ZZmbVr19KmTRtGjBjBTTfdxLhx4ypdvk+fPnz99dcnxt9//30uvPDCMrHXZL3+8nXd5eMNJEsYJmyM6N2OIV1b8tB765nxyRYWfLubi/u2481VO+1JcZfs3buXxMREr2U7duzg8OHDjBgxgujoaAYPHswTTzxRYb4jR45w2223ERMTw9ChQ7nmmmvKlHft2pWlS5ee+GIvLCxky5YtXHXVVcyYMYPTT/f05zF37lzeffddDh48yI033sgFF1wAePrHiImJ4dChQyQkJDB//nyef/75CrFXtt6qnHbaaRw7dozDhw+zf//+E9dvHn74YUaMGFHl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
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test Passed.
+
+TEST 3...
+Passed Test 3.
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Testing initial condition with following specifications:
+P0 =  1.0   k1prime =  1.0   k2 =  1.0
+Calculate value of P =  1.0
+Test passed.
+
+Testing initial condition with following specifications:
+P0 =  5.0   k1prime =  1.0   k2 =  0.001
+Calculate value of P =  5.000000000000001
+Test passed.
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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DSM81eYahl1NNA1Kl1aNufuCHnz2+3Np1SSmQnnJk+bGmMCzhGEapIgIYd/hAq9lWTl5hNKRszH1hSUM02AlJcZXWnbd81+TeeBoHUZjTOizhGEarIkjehBfrs+P+OgIRqcls3zrfi7456fMWrKV4vKdjhhTx9588023QwgISximwUpPTeah0X1JToxH8LRr9NDofvzf2AEs+O05DOrcgvvf/paxM75k857DbodrKpGXl8fPfvYzvv/+e+Lj4080NAgwY8YM2rVrx4ABA+jatSszZ84kLy+PAQMGEBMTw969e2u0zY8//phrr7222vkKCgo455xzKrQtNWHCBL744osTsRcVFVW63s2bN7NgwYIaxelvzJXFGyiWMEyDlp6azBeThvHD1Iv5YtKwMs2SzLr+VP7xi/5szj7MRY99xhOLNlNYB62rGv8899xzjB49msjISE466aQTTY4DZGRk8MADD7B69WreeOMN7r77buLj41m9ejVJSUk13uaaNWvKNBtSmZiYGIYPH85rr71WZvrSpUsZMmRImdgrW++CBQuq7V9j8eLFjB8/vtYxVxZvoFjCMCFLRBgzMIUPf/szzu/dlmnzN/Lzx78gIzPX7dBMKS+99BKXXnqp17K1a9fSs2dPAFJSUk78kq+tki/fY8eOMX78eO67775Kb5RIT08v033s+vXr6d69O5GRkRVi97ZeEQnI7cu+xlw+3kCyB/dMyGudEMsTV6fx8/4/MmXuN6Q/+QU3nd2F357Xvdp+z8PK0KEVp40dC7fdBkePwkUXVSwfP94z7N0Ll19etqxU50WVKSgoYMuWLXTu3JmtW7dWKM/IyKBXr16oKtOnT2fUqFE+VKSso0ePEh8fX6ZZmbVr19KmTRtGjBjBTTfdxLhx4ypdvk+fPnz99dcnxt9//30uvPDCMrHXZL3+8nXd5eMNJEsYJmyM6N2OIV1b8tB765nxyRYWfLubi/u2481VO+1JcZfs3buXxMREr2U7duzg8OHDjBgxgujoaAYPHswTTzxRYb4jR45w2223ERMTw9ChQ7nmmmvKlHft2pWlS5ee+GIvLCxky5YtXHXVVcyYMYPTT/f05zF37lzeffddDh48yI033sgFF1wAePrHiImJ4dChQyQkJDB//nyef/75CrFXtt6qnHbaaRw7dozDhw+zf//+E9dvHn74YUaMGFHl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
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test Passed.
+Passed Test 3.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(255,0,0,0.05) ; padding: 10px; border: 1px solid darkred;"> 
+<b>Tutorial Activity</b>: When first typing this model, I mistaking specified <tt>pre_expon = -(k1prime) + k2*t</tt>. Without running any Python code, which tests would fail with this bug? (This is a good exam practice question.)
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write your answer here:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.10-Assertions">1.10 Assertions<a class="anchor-link" href="#1.10-Assertions">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In life it pays to be assertive.  The same is true in programming.  Let's try an example.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative P0, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>With negative P0, P(t=10) = -5.000226999648812
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The code worked, but the answer is non-sensical.  We'd like to tell the user that <code>P_calc</code> was called with an improper value. We could just change the help text to indicate that each input needs to be greater than zero.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">P_conc_docs</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein, MUST BE POSITIVE</span>
+<span class="sd">        k1prime: forward reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        k2: reverse reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent. bug has been fixed</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">P_conc_docs</span><span class="p">)</span>
+
+<span class="c1">#the result is the same</span>
+<span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc_docs</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative P0, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on function P_conc_docs in module __main__:
+
+P_conc_docs(t, P0, k1prime, k2, LOUD=False)
+    Computes the concentration of phenolphthalein as a function of time
+    
+    Args:
+        t: time, either a scalar (float) or vector (numpy array)
+        P0: initial concentration of phenolphthalein, MUST BE POSITIVE
+        k1prime: forward reaction rate constant, MUST BE POSITIVE
+        k2: reverse reaction rate constant, MUST BE POSITIVE
+        
+    Returns:
+        concentration, either a scalar (float) or vector (numpy array) depening in arg. t
+
+With negative P0, P(t=10) = -5.000000010305769
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Well the result is the same: if the user doesn't respect the instruction for the function inputs, the function will behave strangely. It could be even worse:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc_docs</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=-</span><span class="mi">10</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative k1prime and negative k2, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-17-b294912d3709&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>test_P <span class="ansi-blue-fg">=</span> P_conc_docs<span class="ansi-blue-fg">(</span>t<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10.0</span><span class="ansi-blue-fg">,</span> P0<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">,</span> k1prime<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> k2<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;With negative k1prime and negative k2, P(t=10) =&#34;</span><span class="ansi-blue-fg">,</span> test_P<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-15-f333314c111d&gt;</span> in <span class="ansi-cyan-fg">P_conc_docs</span><span class="ansi-blue-fg">(t, P0, k1prime, k2, LOUD)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">     15</span>     <span class="ansi-red-fg"># compute first fraction in formula</span>
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">     </span>frac1 <span class="ansi-blue-fg">=</span> k2<span class="ansi-blue-fg">/</span><span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">+</span> k2<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> 
+<span class="ansi-green-intense-fg ansi-bold">     18</span>     <span class="ansi-red-fg"># compute section fraction in formula</span>
+
+<span class="ansi-red-fg">ZeroDivisionError</span>: float division by zero</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is where the assert statement comes in.  It can assure that the arguments to the function are what they should be.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">P_conc_assert</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein, MUST BE POSITIVE</span>
+<span class="sd">        k1prime: forward reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        k2: reverse reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="k">assert</span> <span class="p">(</span><span class="n">P0</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="p">(</span><span class="n">k1prime</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> 
+    <span class="k">assert</span> <span class="p">(</span><span class="n">k2</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">&gt;</span> <span class="mf">1E-10</span><span class="p">)</span>
+    
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent. bug has been fixed</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># for some problems, it makes sense to also apply assert to intermediate values</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc_assert</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative k1prime and negative k2, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-19-5da5158ce7f1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>test_P <span class="ansi-blue-fg">=</span> P_conc_assert<span class="ansi-blue-fg">(</span>t<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10.0</span><span class="ansi-blue-fg">,</span> P0<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">,</span> k1prime<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> k2<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;With negative k1prime and negative k2, P(t=10) =&#34;</span><span class="ansi-blue-fg">,</span> test_P<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-18-43e0fdffa38f&gt;</span> in <span class="ansi-cyan-fg">P_conc_assert</span><span class="ansi-blue-fg">(t, P0, k1prime, k2, LOUD)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span> 
+<span class="ansi-green-intense-fg ansi-bold">     15</span>     <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>P0 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span>     <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k2 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     18</span>     <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">+</span> k2 <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1E-10</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">AssertionError</span>: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that python tells us which assertion failed so we know that the function call had a bad value of <code>k1prime</code>.  The program still fails, but it tells us exactly why. We can also use assertions to test that the code behaves the way we expect.</p>
+<p>These types of assert statements can help you debug later on down the road.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.10-Error-Handling">1.10 Error Handling<a class="anchor-link" href="#1.10-Error-Handling">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are times when you want to handle an error gracefully. When a program is running, if it encounters an error it can raise and exception. The exception will give some indication of what the error is. In Python, you can place some code in a special block of code called a <strong>try block</strong>. After the try block, the types of exception to handle are listed using except blocks. Only the exceptions that are explicitly handled are caught.</p>
+<p>One type of exception is the <code>ZeroDivisionError</code> that is raised when a number is divided by zero. First, we will look at an uncaught exception:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">/</span><span class="mi">0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-20-7351058cd412&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>z <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">10.5</span><span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">0</span>
+
+<span class="ansi-red-fg">ZeroDivisionError</span>: float division by zero</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">/</span><span class="mi">0</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You cannot Divide by zero&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You cannot Divide by zero
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One thing that happens when you catch a raised exception, is that <strong>the program will continue on</strong>. This can be a useful feature, but often times you want to catch an exception, print a useful error message, and then have the program end. This can be done by adding a <code>raise</code> statement to the end of the except block. The raise statement tells Python to still fail due to the exception, despite the fact that we caught it. This changes the previous example by one line, but changes the output and forces the program to quit:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">/</span><span class="mi">0</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You cannot divide by 0, exiting&quot;</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="c1"># kill the program</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You cannot divide by 0, exiting
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-24-e0457518558c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg">     </span>z <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">10.5</span><span class="ansi-blue-fg">/</span><span class="ansi-cyan-fg">0</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">except</span> ZeroDivisionError<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;You cannot divide by 0, exiting&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     <span class="ansi-green-fg">raise</span> <span class="ansi-red-fg"># kill the program</span>
+
+<span class="ansi-red-fg">ZeroDivisionError</span>: float division by zero</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's see this applied to our reaction kinetics example.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="k">def</span> <span class="nf">P_conc_assert2</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">P0</span><span class="p">,</span> <span class="n">k1prime</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the concentration of phenolphthalein as a function of time</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        t: time, either a scalar (float) or vector (numpy array)</span>
+<span class="sd">        P0: initial concentration of phenolphthalein, MUST BE POSITIVE</span>
+<span class="sd">        k1prime: forward reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        k2: reverse reaction rate constant, MUST BE POSITIVE</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        concentration, either a scalar (float) or vector (numpy array) depening in arg. t</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="p">(</span><span class="n">P0</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="p">(</span><span class="n">k1prime</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> 
+        <span class="k">assert</span> <span class="p">(</span><span class="n">k2</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">&gt;</span> <span class="mf">1E-10</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">AssertionError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Input Parameters are not all positive.&quot;</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P0 =&quot;</span><span class="p">,</span><span class="n">P0</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;k1prime =&quot;</span><span class="p">,</span><span class="n">k1prime</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;k2 =&quot;</span><span class="p">,</span><span class="n">k2</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="c1"># kill the program</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;An unexpected error occurred when&quot;</span><span class="p">,</span>
+                              <span class="s2">&quot;checking the function parameters&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="c1"># kill the program</span>
+    
+    
+    <span class="c1"># compute first fraction in formula</span>
+    <span class="n">frac1</span> <span class="o">=</span> <span class="n">k2</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute section fraction in formula</span>
+    <span class="n">frac2</span> <span class="o">=</span> <span class="n">k1prime</span><span class="o">/</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span>
+    
+    <span class="c1"># compute term that goes into exponent. bug has been fixed</span>
+    <span class="n">pre_expon</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">k1prime</span> <span class="o">+</span> <span class="n">k2</span><span class="p">)</span><span class="o">*</span><span class="n">t</span>
+    
+    <span class="c1"># evaluate exponent</span>
+    <span class="n">expon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">pre_expon</span><span class="p">)</span>
+    
+    <span class="c1"># for some problems, it makes sense to also apply assert to intermediate values</span>
+    
+    <span class="c1"># combine together</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">P0</span><span class="o">*</span><span class="p">(</span><span class="n">frac1</span> <span class="o">+</span> <span class="n">frac2</span><span class="o">*</span><span class="n">expon</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">LOUD</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac1 = &quot;</span><span class="p">,</span><span class="n">frac1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frac2 = &quot;</span><span class="p">,</span><span class="n">frac2</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pre_expon = &quot;</span><span class="p">,</span><span class="n">pre_expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;expon = &quot;</span><span class="p">,</span><span class="n">expon</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;P = &quot;</span><span class="p">,</span><span class="n">P</span><span class="p">)</span>
+    
+    <span class="c1"># return final value</span>
+    <span class="k">return</span> <span class="n">P</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With this function, if it is passed a negative value, will raise an <tt>AssertionError</tt>. The code catches this error, prints out the input parameters to the user, and then exits by raising the exception.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc_assert2</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative k1prime and negative k2, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Input Parameters are not all positive.
+P0 = 1.0
+k1prime = 0.0
+k2 = 0.0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-23-01ec377f196b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>test_P <span class="ansi-blue-fg">=</span> P_conc_assert2<span class="ansi-blue-fg">(</span>t<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10.0</span><span class="ansi-blue-fg">,</span> P0<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1.0</span><span class="ansi-blue-fg">,</span> k1prime<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> k2<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;With negative k1prime and negative k2, P(t=10) =&#34;</span><span class="ansi-blue-fg">,</span> test_P<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-22-6f0171c1ee01&gt;</span> in <span class="ansi-cyan-fg">P_conc_assert2</span><span class="ansi-blue-fg">(t, P0, k1prime, k2, LOUD)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">     15</span>         <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>P0 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span>         <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k2 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     18</span>         <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">+</span> k2 <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">1E-10</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">AssertionError</span>: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Also, the function has a generic except statement that will catch any other errors in the try block. Because the try block involves comparison of numbers, if we pass a string as a parameter, there will be an error when checking if that parameter is greater than 0. This exception will be caught by the generic except statement, and the code prints out an error message, and then quits:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_P</span> <span class="o">=</span> <span class="n">P_conc_assert2</span><span class="p">(</span><span class="n">t</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">P0</span><span class="o">=</span><span class="s2">&quot;hello world&quot;</span><span class="p">,</span> <span class="n">k1prime</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">k2</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;With negative k1prime and negative k2, P(t=10) =&quot;</span><span class="p">,</span> <span class="n">test_P</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>An unexpected error occurred when checking the function parameters
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-26-e4e13e3a25ad&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>test_P <span class="ansi-blue-fg">=</span> P_conc_assert2<span class="ansi-blue-fg">(</span>t<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10.0</span><span class="ansi-blue-fg">,</span> P0<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#34;hello world&#34;</span><span class="ansi-blue-fg">,</span> k1prime<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> k2<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;With negative k1prime and negative k2, P(t=10) =&#34;</span><span class="ansi-blue-fg">,</span> test_P<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-22-6f0171c1ee01&gt;</span> in <span class="ansi-cyan-fg">P_conc_assert2</span><span class="ansi-blue-fg">(t, P0, k1prime, k2, LOUD)</span>
+<span class="ansi-green-intense-fg ansi-bold">     13</span>     &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>P0 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     16</span>         <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k1prime <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span>         <span class="ansi-green-fg">assert</span> <span class="ansi-blue-fg">(</span>k2 <span class="ansi-blue-fg">&gt;</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">TypeError</span>: &#39;&gt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a> | <a href="toc.html">Contents</a> | &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.10-Testing-and-Debugging.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
     </div>
   </div>
 </body>

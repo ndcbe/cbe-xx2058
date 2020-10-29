@@ -1,8 +1,10 @@
+
+<!-- jinja2 template extends `full` to include cell tags in the html rendering of notebooks -->
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>toc</title>
+<title>Notebook</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,183 +13115,1782 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+
+    
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="cbe-xx258"><a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a><a class="anchor-link" href="#cbe-xx258">&#182;</a></h1><h2 id="Chapter-1.0-Python-Primer"><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">Chapter 1.0 Python Primer</a><a class="anchor-link" href="#Chapter-1.0-Python-Primer">&#182;</a></h2><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.1-Why-Python?">1.0.1 Why Python?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.2-Chapter-Learning-Objectives">1.0.2 Chapter Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.3-Activities">1.0.3 Activities</a></li>
-<li>Markdown Figures<ul>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-1-768x633.png">image1</a></li>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-2-768x636.png">image2</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum"><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a><a class="anchor-link" href="#1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1-Quick-Python-Introduction">1.1.1 Quick Python Introduction</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.1-Variables">1.1.1.1 Variables</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.2-Execution-Order">1.1.1.2 Execution Order</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.2-Vocareum-Autograder">1.1.2 Vocareum Autograder</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3-Gradescope">1.1.3 Gradescope</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.1-Handwritten-Work">1.1.3.1 Handwritten Work</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.2-Notebooks">1.1.3.2 Notebooks</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.2-Learning-Python-Basics"><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a><a class="anchor-link" href="#1.2-Learning-Python-Basics">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.1-Learning-Objectives">1.2.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2-Hello-World-and-Interactive-Sessions">1.2.2 Hello World and Interactive Sessions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2.1-Command-Line-Mode">1.2.2.1 Command Line Mode</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.3-Comments">1.2.3 Comments</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4-Errors">1.2.4 Errors</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.1-&quot;Good&quot;-Bugs">1.2.4.1 "Good" Bugs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.2-&quot;Bad&quot;-Bugs">1.2.4.2 "Bad" Bugs</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.5-Indentation">1.2.5 Indentation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.6-Input">1.2.6 Input</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7-Variables">1.2.7 Variables</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.1-Integers">1.2.7.1 Integers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.2-Floating-Point-Numbers">1.2.7.2 Floating Point Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.3-Built-in-Mathematical-Functions">1.2.7.3 Built-in Mathematical Functions</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.8-Strings-and-Overloading">1.2.8 Strings and Overloading</a></li>
-</ul>
-<h3 id="1.3-Flow-Control-and-Pseudocode"><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a><a class="anchor-link" href="#1.3-Flow-Control-and-Pseudocode">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.1-Learning-Objectives">1.3.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.2-If-Statements">1.3.2 If Statements</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.3-Iteration-with-While-Loops">1.3.3 Iteration with While Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.4-For-Loops">1.3.4 For Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.5-Pseudocode">1.3.5 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6-Estimate-$\pi$-by-throwing-darts">1.3.6 Estimate $\pi$ by throwing darts</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.1-Governing-Formula">1.3.6.1 Governing Formula</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2-Pseudocode">1.3.6.2 Pseudocode</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.1-Python-Implementation">1.3.6.2.1 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.2-Python">1.3.6.2.2 Python</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.3-Using-Help-to-Learn-More-About-a-Function">1.3.6.3 Using Help to Learn More About a Function</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.4-Another-Solution-Approach---With-Plots">1.3.6.4 Another Solution Approach - With Plots</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.7-TODO:-Add-another-pseudocode-example">1.3.7 TODO: Add another pseudocode example</a></li>
-</ul>
-<h3 id="1.4-Functions,-Scoping,-and-Other-Fun-Stuff"><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a><a class="anchor-link" href="#1.4-Functions,-Scoping,-and-Other-Fun-Stuff">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.1-Learning-Objectives">1.4.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2-Functions">1.4.2 Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.1-Calling-functions">1.4.2.1 Calling functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.2-Return-Values">1.4.2.2 Return Values</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.3-Docstrings-and-Help">1.4.2.3 Docstrings and Help</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.3-Scope">1.4.3 Scope</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.4-Recursion">1.4.4 Recursion</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.5-Modules">1.4.5 Modules</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.6-Files">1.4.6 Files</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7-Example:-High/Low-Guess-My-Number-Game">1.4.7 Example: High/Low Guess My Number Game</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.1-Instructions">1.4.7.1 Instructions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.2-Pseudocode">1.4.7.2 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.3-Python-Implementation">1.4.7.3 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.4-Testing">1.4.7.4 Testing</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.5-List,-Dictionaries,-and-Enumeration"><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a><a class="anchor-link" href="#1.5-List,-Dictionaries,-and-Enumeration">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.1-Learning-Objectives">1.5.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.2-Lists">1.5.2 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3-Dictionaries">1.5.3 Dictionaries</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.1-Example:-Shopping-List">1.5.3.1 Example: Shopping List</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">1.5.3.2 Another Example: Chemical Symbols and Element Names</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.3-Dictionary-of-Dictionaries">1.5.3.3 Dictionary of Dictionaries</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4-Enumerate">1.5.4 Enumerate</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.1-Lists">1.5.4.1 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.2-Dictionaries">1.5.4.2 Dictionaries</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.6-Linear-Algebra-with-Numpy-and-Scipy"><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a><a class="anchor-link" href="#1.6-Linear-Algebra-with-Numpy-and-Scipy">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.1-Learning-Objectives">1.6.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2-NumPy-Arrays">1.6.2 NumPy Arrays</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.1-Getting-Started">1.6.2.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.2-Creating-Arrays-in-Neat-Ways">1.6.2.2 Creating Arrays in Neat Ways</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.3-Operations-on-Arrays">1.6.2.3 Operations on Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.4-Universal-Functions">1.6.2.4 Universal Functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.5-Copying-Arrays">1.6.2.5 Copying Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.6-Indexing,-Slicing,-and-Iterating">1.6.2.6 Indexing, Slicing, and Iterating</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.7-Complex-Numbers">1.6.2.7 Complex Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.8-Integrating-Everything-Together">1.6.2.8 Integrating Everything Together</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.7-Visualization-with-matplotlib"><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html">1.7 Visualization with matplotlib</a><a class="anchor-link" href="#1.7-Visualization-with-matplotlib">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.1-Learning-Objectives">1.7.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2-Matplotlib-Basics">1.7.2 Matplotlib Basics</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.1-3b-i.-Customizing-Plots">1.7.2.1 3b-i. Customizing Plots</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.2-3b-ii.-Plotting-multiple-lines">1.7.2.2 3b-ii. Plotting multiple lines</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.3-Publication-Quality-Figures">1.7.3 Publication Quality Figures</a></li>
-</ul>
-<h3 id="1.8-Manipulating-Data-with-Pandas"><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html">1.8 Manipulating Data with Pandas</a><a class="anchor-link" href="#1.8-Manipulating-Data-with-Pandas">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.1-Learning-Objectives">1.8.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2-Working-with-Data-Using-Pandas">1.8.2 Working with Data Using Pandas</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.1-Loading-and-Inspecting-Data">1.8.2.1 Loading and Inspecting Data</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.2-Computing-Summary-Statistics">1.8.2.2 Computing Summary Statistics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.3-Combining-Pandas-and-Matplotlib">1.8.2.3 Combining Pandas and Matplotlib</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3-Investment-Strategies">1.8.3 Investment Strategies</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.1-Getting-Started">1.8.3.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.2-Portfolio-Calculator">1.8.3.2 Portfolio Calculator</a></li>
-</ul>
-</li>
-<li>Markdown Links<ul>
-<li><a href="http://highered.mheducation.com/sites/0073401331/student_view0/data_sets.html">the publisher</a></li>
-<li><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html">10 minutes to pandas</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.9-Functions-as-Arguments"><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a><a class="anchor-link" href="#1.9-Functions-as-Arguments">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.1-Learning-Objectives">1.9.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2-Functions-passed-to-Functions">1.9.2 Functions passed to Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.1-Motivating-Example:-Midpoint-Integration">1.9.2.1 Motivating Example: Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.2-Convergence-Analysis">1.9.2.2 Convergence Analysis</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.3-A-Fancier-Integration-Function">1.9.2.3 A Fancier Integration Function</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3-Lambda-Functions">1.9.3 Lambda Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.1-Example:-Lambda-Functions-and-Midpoint-Integration">1.9.3.1 Example: Lambda Functions and Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.2-4c-ii.-Extension-to-Two-Dimensional-Functions">1.9.3.2 4c-ii. Extension to Two Dimensional Functions</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.10-Testing-and-Debugging-in-Python"><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html">1.10 Testing and Debugging in Python</a><a class="anchor-link" href="#1.10-Testing-and-Debugging-in-Python">&#182;</a></h3>
-<pre><code>- [1.10.1 Learning Objectives](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Learning-Objectives)
-</code></pre>
+<p><!--NOTEBOOK_HEADER--><em>This notebook contains material for CBE 20258 Numerical and Statistical Analysis taught at the University of Notre Dame. (c) Professors Alexander Dowling, Ryan McClarren, and Yamil Colón. This page <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a> in addition to the entire course contents are available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.02-Variables.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.2-Learning-Python-Basics">1.2 Learning Python Basics<a class="anchor-link" href="#1.2-Learning-Python-Basics">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Reference</strong>: Chapter 1 of <em>Computational Nuclear Engineering and Radiological Science Using Python</em>, R. McClarren (2018)</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.1-Learning-Objectives">1.2.1 Learning Objectives<a class="anchor-link" href="#1.2.1-Learning-Objectives">&#182;</a></h2><p>After studying this notebook, completing the activities, and asking questions in class, you should be able to:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.2-Hello-World-and-Interactive-Sessions">1.2.2 Hello World and Interactive Sessions<a class="anchor-link" href="#1.2.2-Hello-World-and-Interactive-Sessions">&#182;</a></h2><p>In almost any computer language the first thing you do is create a program called "Hello world!".</p>
+<p>This <strong>notebook</strong> is an interactive session. We just type the command <code>print("Hello World.")</code> and the press Shift+Enter to execute.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello World.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Print the first two lines of your favorite poem or song.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hint: Use <code>\n</code> to create a new line.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Unicode Characters</strong></p>
 <ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Testing-Your-Code">1.10.1 Testing Your Code</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">1.10.1.1 Test 0: Takes Inputs as Advertised?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.2-Test-1:-Initial-Condition">1.10.1.2 Test 1: Initial Condition</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.3-Test-2:-Asymptotics">1.10.1.3 Test 2: Asymptotics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.4-Test-3:-Check-a-Few-Inputs">1.10.1.4 Test 3: Check a Few Inputs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Debugging-is-a-Mindset">1.10.1 Debugging is a Mindset</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.2-Test-2">1.10.2 Test 2</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.3-Test-3">1.10.3 Test 3</a></li>
-</ul>
-</li>
+<li>A way to express fancy letters, like emojis</li>
+<li>Supported by Python</li>
+<li>Copy-and-paste is the easiest way to write in code</li>
+<li>Easy to find on website such as <a href="http://xahlee.info">http://xahlee.info</a>, <a href="https://www.compart.com/en/unicode/">https://www.compart.com/en/unicode/</a>, and <a href="https://unicode-table.com/en/#control-character">https://unicode-table.com/en/#control-character</a> (top Google search results)</li>
 </ul>
 
 </div>
 </div>
 </div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The temperature was 56 °F this morning.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The temperature was 56 °F this morning.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+    <b>Home Activity</b>: Write a print statement using at least two unicode characters.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.2.1-Command-Line-Mode">1.2.2.1 Command Line Mode<a class="anchor-link" href="#1.2.2.1-Command-Line-Mode">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Above, we used the <em>interactive mode</em>, which means the result of each line is displayed when I enter the line.</p>
+<p>It is more common to put your code into a separate file and then execute it by typing</p>
+<p><code>python codename.py</code></p>
+<p>where <code>codename.py</code> is the name of your file.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>How to access a Python interpreter?</strong></p>
+<ul>
+<li>Mac or Linux: Open terminal and type <code>python</code></li>
+<li>Mac, Linux, or Windows: Use an IDE.</li>
+</ul>
+<p><em>Anaconda</em> is the easiest free Python environment to install. It is already available in B19.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Optional Home Activity</b>: Install Anaconda on your computer.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hint: Start at <a href="https://www.anaconda.com/distribution/#download-section">https://www.anaconda.com/distribution/#download-section</a>. Ask questions in tutorial if you get stuck.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.3-Comments">1.2.3 Comments<a class="anchor-link" href="#1.2.3-Comments">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Comments are your friend.  They can be time consuming to add, but never have I looked back at old code and regreted adding them.</p>
+<p>A <b>comment</b> is a annotation in your code to</p>
+<ul>
+<li> inform the reader, often yourself, of what a particular piece of code is trying to do
+<li> indicate the designed output, result, etc. of a part of the code
+<li> make the code more readable
+</ul><p><b><blink>Any code you submit for a class assignment must be well commented!</blink></b>
+This is not to punish you, but to help you.</p>
+<p>You use the pound (aka hashtag) to comment out the rest of a line: everything that follows the # is ignored by python.  Therefore, you can put little notes to yourself or others about what is going on in the code.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#This next line should compute 9*9 + 19 = 100</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">9</span><span class="o">*</span><span class="mi">9</span> <span class="o">+</span> <span class="mi">19</span><span class="p">)</span>
+
+<span class="c1">#You can also make comments inside a line</span>
+<span class="mi">9</span><span class="o">*</span><span class="mi">9</span> <span class="c1">#+ 19</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>100
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>81</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are also ways to make multiline comments by use a triple quote '''</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;The beginning of a multiline comment.</span>
+<span class="sd">This comment will be followed by meaningless </span>
+<span class="sd">code.  Enjoy &#39;&#39;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I am the very model of a modern major general.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I am the very model of a modern major general.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Add comments to the following calculation. At the top, write a sentence describing the program in the multiline comment block. Then fill in each empty single line comment with <b>units</b>.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># </span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1"># </span>
+<span class="n">pi</span> <span class="o">=</span>  <span class="mf">3.14159265359</span>
+
+<span class="c1"># Calculate sphere area (m^2)</span>
+<span class="n">area</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sphere surface area:&quot;</span><span class="p">,</span><span class="n">area</span><span class="p">,</span><span class="s2">&quot;m^2&quot;</span><span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="n">vol</span> <span class="o">=</span> <span class="mi">4</span><span class="o">/</span><span class="mi">3</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sphere volume:&quot;</span><span class="p">,</span><span class="n">vol</span><span class="p">,</span><span class="s2">&quot;m^3&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sphere surface area: 12.56637061436 m^2
+Sphere volume: 4.188790204786667 m^3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.4-Errors">1.2.4 Errors<a class="anchor-link" href="#1.2.4-Errors">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We call errors in computer programs <strong>bugs</strong>. Even experienced programmers write code with bugs. We will learn best practice procedures to try to rid a code of bugs, but even the most sophisticated software quality assurance techniques will not catch every one. Let's look at a <strong>good bug</strong> and a <strong>bad bug</strong>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.4.1-&quot;Good&quot;-Bugs">1.2.4.1 "Good" Bugs<a class="anchor-link" href="#1.2.4.1-&quot;Good&quot;-Bugs">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Good bug: A syntax mistake that Python will catch and scream about.</p>
+<p><strong>Example</strong></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#This is a good bug because the python interpreter complains</span>
+<span class="mi">9</span><span class="o">*</span><span class="mi">9</span> <span class="o">+</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-6-d848fea5e32c&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">2</span>
+<span class="ansi-red-fg">    9*9 +</span>
+          ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Create another example of a "good" bug. Share with a friend.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.4.2-&quot;Bad&quot;-Bugs">1.2.4.2 "Bad" Bugs<a class="anchor-link" href="#1.2.4.2-&quot;Bad&quot;-Bugs">&#182;</a></h3><p>Bad bug: A flaw in the logic of the computer program. These are much harder to catch.</p>
+<p><strong>Example</strong>: We want to compute</p>
+$$(3 + 5)^2 = 8^2 = 64$$<p>But we input:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span><span class="o">**</span><span class="mi">2</span>
+<span class="c1">#You don&#39;t get the correct answer, and no one tells you that you&#39;re wrong.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Copy the code below and then fix the bad bug.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is an example of the power and feebleness of computers.  A computer can do anything <strong>you tell it to</strong>, but it doesn't necessarily do what you want it to. Always keep this in mind: just because the computer did something, that doesn't mean it did what you wanted.</p>
+<p>Later we will talk in more detail about bugs, finding bugs (called debugging), and testing of code.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.5-Indentation">1.2.5 Indentation<a class="anchor-link" href="#1.2.5-Indentation">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python is, by design, <strong>very picky about how you lay out your code</strong>.  It requires that code blocks be properly indented. We'll discuss what code blocks are later, but your code needs to be properly aligned to make this work.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#If I improperly indent, my code won&#39;t work</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not indented&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;indented, but it shouldn&#39;t be&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-7-d3b8fb0c247c&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">3</span>
+<span class="ansi-red-fg">    print(&#34;indented, but it shouldn&#39;t be&#34;)</span>
+    ^
+<span class="ansi-red-fg">IndentationError</span><span class="ansi-red-fg">:</span> unexpected indent
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that none of my code executed because of the indentation error. An indent tells the Python interpreter the indented code is part of a code block and needs to be executed in a special way. Only at certain times can one indent and it makes sense. We will revisit this in a few lectures.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Copy the code below and fix the indentation error.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not indented&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;indented, but it shouldn&#39;t be&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.6-Input">1.2.6 Input<a class="anchor-link" href="#1.2.6-Input">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can prompt the user for input using the <tt> input </tt> command:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
+<span class="n">user_value</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">user_value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 *&quot;</span><span class="p">,</span> <span class="n">user_value</span><span class="p">,</span><span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">user_value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number (just type 7): &quot;</span><span class="p">)</span>
+<span class="n">user_value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">user_value</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">user_value</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct, we have a winner&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Claim your prize&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You guessed poorly.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that in this example we used an <tt>if-else</tt> statement.  The <tt>if-else</tt> statement is a way to execute different parts of the code based on some conditional expression.  This type of execution is sometimes called <b>branching</b> or <b>selection</b>. We will discuss this in detail below.</p>
+<p>Also notice the indentation in the <tt>if-else</tt> block.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Rerun the code above. Find input values that execute each part (a.k.a., branch, section) of the if statement. In other words, find one input value that causes the program to output "Claim your prize". Then find a different input value that causes the program to output "You guessed poorly". Record your answer below in the text (Markdown) cell:
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Answer to Home Activity:</strong></p>
+<p>Input that printed "claim your prize":</p>
+<p>Input that printed "You guessed poorly":</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.7-Variables">1.2.7 Variables<a class="anchor-link" href="#1.2.7-Variables">&#182;</a></h2><p>Information, or data, is stored in variables.  Common types of variables include <em>floating point numbers</em> (decimals), <em>integer numbers</em>, and <em>text</em> to name a few. For a complete list of the python data types, see <a href="https://docs.python.org/3.4/library/stdtypes.html">https://docs.python.org/3.4/library/stdtypes.html</a></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.7.1-Integers">1.2.7.1 Integers<a class="anchor-link" href="#1.2.7.1-Integers">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Integers are whole numbers, including the negatives.  They never have a fractional, or decimal, part and should only be used for data that is a count.</p>
+<p>To assign an integer to a variable use the equals sign.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#assign the value 2 to x</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mf">2.0</span><span class="p">)</span>
+
+<span class="c1">#check that x is an integer</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Integers are useful for things that can be counted: perhaps that number of times we execute a loop, the number of elements of a vector, or the number of students in a class.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Copy the code from above and modify to multiple x by <b>2</b> instead of <b>2.0</b>. What is the variable type now?
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#assign the value 2 to x</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1">#check that x is an integer</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.7.2-Floating-Point-Numbers">1.2.7.2 Floating Point Numbers<a class="anchor-link" href="#1.2.7.2-Floating-Point-Numbers">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Floating point numbers are numbers that do have a fractional part.  Most numbers in engineering calculations are floating point types.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now make some others floating point variables</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">4.2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+<span class="c1">#note that exponentiation is **</span>
+<span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">/</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(2 / 4.2)**3 =&quot;</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The way that floating point numbers are represented on a computer has <strong>only a finite precision</strong>.  That means we cannot represent a number exactly in many cases. We'll see later an example of how floating point accuracy can make a difference in a calculation.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Add 1E-10 to 1E-20. Is the answer what you expect?
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Hint: <code>1E-20</code> is shorthand for $1 \times 10^{-20}$, which is sometimes called scientific notation.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">1E-10</span> <span class="o">+</span> <span class="mf">1E-20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.2.7.3-Built-in-Mathematical-Functions">1.2.7.3 Built-in Mathematical Functions<a class="anchor-link" href="#1.2.7.3-Built-in-Mathematical-Functions">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are almost every common mathematical function you might need for python already built in. To use them you have to import that math functions using the command <tt>import</tt>.  In the code below, I set it up so that to use a math function you use the syntax <tt>math.[function]</tt> where <tt>[function]</tt> is the name of the function you want to call.</p>
+<p>See <a href="https://docs.python.org/3.4/library/math.html">https://docs.python.org/3.4/library/math.html</a> for the complete list of built-in mathematical functions.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+<span class="c1">#take cosine of a number close to pi</span>
+<span class="n">theta</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="n">trig_variable</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cos(&quot;</span><span class="p">,</span><span class="n">theta</span><span class="p">,</span><span class="s2">&quot;) =&quot;</span><span class="p">,</span><span class="n">trig_variable</span><span class="p">)</span>
+
+<span class="c1">#use the exponential to give me e</span>
+<span class="n">e</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The base of the natural logarithm is&quot;</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
+
+<span class="c1">#python has a built-in pi as well</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value of pi is&quot;</span><span class="p">,</span><span class="n">m</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice how in the print statements, if I give it multiple arguments, it prints each with a space in between. The natural logarithm is just <tt>math.log</tt> and the base 10 logarithm is <tt>math.log10</tt>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The natural log of 10 is&quot;</span><span class="p">,</span><span class="n">m</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The log base-10 of 10 is&quot;</span><span class="p">,</span><span class="n">m</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are two non-obvious mathematical operators, integer division: //, and the modulus (or remainder): %</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 7 / 3 is 2 remainder 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;7 divided by 3 is&quot;</span><span class="p">,</span><span class="mi">7</span><span class="o">//</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;remainder&quot;</span><span class="p">,</span><span class="mi">7</span><span class="o">%</span><span class="k">3</span>)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;851 divided by 13 is&quot;</span><span class="p">,</span><span class="mi">851</span><span class="o">//</span><span class="mi">13</span><span class="p">,</span><span class="s2">&quot;remainder&quot;</span><span class="p">,</span><span class="mi">851</span><span class="o">%</span><span class="k">13</span>)
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Study and execute the code below. Then write a sentence to explain the different between integer and floating point division.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># integer division</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;7 // 3 = &quot;</span><span class="p">,</span><span class="mi">7</span><span class="o">//</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># floating division</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;7 / 3 = &quot;</span><span class="p">,</span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Write a sentence to explain difference between integer and floating point division:</em></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's also look at how to generate a random number.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A random number between 0 and 1: &quot;</span><span class="p">,</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Generate a random whole number between 0 and 100 using <tt>random.random()</tt>.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A random number between 0 and 100: &quot;</span><span class="p">,</span><span class="mi">100</span><span class="o">*</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.8-Strings-and-Overloading">1.2.8 Strings and Overloading<a class="anchor-link" href="#1.2.8-Strings-and-Overloading">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A string is a data type that is a collection of characters, and needs to be inside quotes:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#This is a string</span>
+<span class="n">aString</span> <span class="o">=</span> <span class="s2">&quot;Coffee is for closers.&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aString</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;aString&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Anything inside the quotes is taken literally by python. That is why the second print statement above just printed <tt>aString</tt>.</p>
+<p>You can also subset, that is get some of the characters in a string, using brackets. Putting a single number in a bracket gives you the character in that position. Note, python starts numbering at 0 so that 0 is the first character in a string.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also get a range of characters in a string using the colon. The colon operator is funny in a way in that <tt>[a:b]</tt> says give me the elements in the string from position <tt>a</tt> to position <tt>b-1</tt>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python defines its ranges this way so that if the string is of length <tt>N</tt>, <tt>[0:N]</tt> returns the whole string.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Negative subsets start at the end of the string (i.e., -1 is the last character of the string).</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+    <b>Home Activity</b>: Print "closers" by accessing elements of <tt>aString</tt>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aString</span><span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With characters (and strings) the + <strong>operator is overloaded</strong>.  What we mean by overloaded, is that it is defined so that the idea of what addition means is conferred to strings.  Therefore,</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;Negative Ghostrider: &#39;</span> <span class="o">+</span> <span class="s1">&#39;the pattern is full&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="o">+</span> <span class="s1">&#39;b&#39;</span> <span class="o">+</span> <span class="s1">&#39;c&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The + operator <strong>concatenates</strong> (or smushes together) the strings/characters it operates on.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The multiplication operator is similarly overloaded, though it is not as general.  It is simple to think about 'The roof, ' * 3</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;The roof, &#39;</span> <span class="o">*</span> <span class="mi">3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, 'The roof, ' * 3.15 is not defined and will give an error:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;The roof, &#39;</span> <span class="o">*</span> <span class="mf">3.15</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-8-cf9164a8e59b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-blue-fg">&#39;The roof, &#39;</span> <span class="ansi-blue-fg">*</span> <span class="ansi-cyan-fg">3.15</span>
+
+<span class="ansi-red-fg">TypeError</span>: can&#39;t multiply sequence by non-int of type &#39;float&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The upshot is that only an integer times a character/string makes sense. The order of operations is respected</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;The roof, &#39;</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="s1">&#39;is on fire...&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Minus makes sense, but only sometimes, so it is not allowed.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;The roof&#39;</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+    <b>Home Activity</b>: Create the string "row row row your boat gently down the stream" using string multiplication and concatenation.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;row &quot;</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="s2">&quot;your boat gently down the stream&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.02-Variables.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
     </div>
   </div>
 </body>

@@ -3,7 +3,18 @@
 # cbe-xx258
 
 ### [Table of Contents](https://ndcbe.github.io/cbe-xx258/toc.html)
+### [Data Index](https://ndcbe.github.io/cbe-xx258/data_index.html)
+### [Python Module Index](https://ndcbe.github.io/cbe-xx258/python_index.html)
 
 ### [Chapter 1.0 Python Primer](https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html)
 - [1.1 Welcome to Jupyter Notebooks and Vocareum](https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html)
+- [1.2 Learning Python Basics](https://ndcbe.github.io/cbe-xx258/01.02-Variables.html)
+- [1.3 Flow Control and Pseudocode](https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html)
+- [1.4 Functions, Scoping, and Other Fun Stuff](https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html)
+- [1.5 List, Dictionaries, and Enumeration](https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html)
+- [1.6 Linear Algebra with Numpy and Scipy](https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html)
+- [1.7 Visualization with matplotlib](https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html)
+- [1.8 Manipulating Data with Pandas](https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html)
+- [1.9 Functions as Arguments](https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html)
+- [1.10 Testing and Debugging in Python](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html)
 

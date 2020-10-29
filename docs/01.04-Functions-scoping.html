@@ -1,8 +1,10 @@
+
+<!-- jinja2 template extends `full` to include cell tags in the html rendering of notebooks -->
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>toc</title>
+<title>Notebook</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,183 +13115,2265 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+
+    
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="cbe-xx258"><a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a><a class="anchor-link" href="#cbe-xx258">&#182;</a></h1><h2 id="Chapter-1.0-Python-Primer"><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">Chapter 1.0 Python Primer</a><a class="anchor-link" href="#Chapter-1.0-Python-Primer">&#182;</a></h2><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.1-Why-Python?">1.0.1 Why Python?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.2-Chapter-Learning-Objectives">1.0.2 Chapter Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.3-Activities">1.0.3 Activities</a></li>
-<li>Markdown Figures<ul>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-1-768x633.png">image1</a></li>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-2-768x636.png">image2</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum"><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a><a class="anchor-link" href="#1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1-Quick-Python-Introduction">1.1.1 Quick Python Introduction</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.1-Variables">1.1.1.1 Variables</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.2-Execution-Order">1.1.1.2 Execution Order</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.2-Vocareum-Autograder">1.1.2 Vocareum Autograder</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3-Gradescope">1.1.3 Gradescope</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.1-Handwritten-Work">1.1.3.1 Handwritten Work</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.2-Notebooks">1.1.3.2 Notebooks</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.2-Learning-Python-Basics"><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a><a class="anchor-link" href="#1.2-Learning-Python-Basics">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.1-Learning-Objectives">1.2.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2-Hello-World-and-Interactive-Sessions">1.2.2 Hello World and Interactive Sessions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2.1-Command-Line-Mode">1.2.2.1 Command Line Mode</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.3-Comments">1.2.3 Comments</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4-Errors">1.2.4 Errors</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.1-&quot;Good&quot;-Bugs">1.2.4.1 "Good" Bugs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.2-&quot;Bad&quot;-Bugs">1.2.4.2 "Bad" Bugs</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.5-Indentation">1.2.5 Indentation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.6-Input">1.2.6 Input</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7-Variables">1.2.7 Variables</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.1-Integers">1.2.7.1 Integers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.2-Floating-Point-Numbers">1.2.7.2 Floating Point Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.3-Built-in-Mathematical-Functions">1.2.7.3 Built-in Mathematical Functions</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.8-Strings-and-Overloading">1.2.8 Strings and Overloading</a></li>
-</ul>
-<h3 id="1.3-Flow-Control-and-Pseudocode"><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a><a class="anchor-link" href="#1.3-Flow-Control-and-Pseudocode">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.1-Learning-Objectives">1.3.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.2-If-Statements">1.3.2 If Statements</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.3-Iteration-with-While-Loops">1.3.3 Iteration with While Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.4-For-Loops">1.3.4 For Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.5-Pseudocode">1.3.5 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6-Estimate-$\pi$-by-throwing-darts">1.3.6 Estimate $\pi$ by throwing darts</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.1-Governing-Formula">1.3.6.1 Governing Formula</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2-Pseudocode">1.3.6.2 Pseudocode</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.1-Python-Implementation">1.3.6.2.1 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.2-Python">1.3.6.2.2 Python</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.3-Using-Help-to-Learn-More-About-a-Function">1.3.6.3 Using Help to Learn More About a Function</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.4-Another-Solution-Approach---With-Plots">1.3.6.4 Another Solution Approach - With Plots</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.7-TODO:-Add-another-pseudocode-example">1.3.7 TODO: Add another pseudocode example</a></li>
-</ul>
-<h3 id="1.4-Functions,-Scoping,-and-Other-Fun-Stuff"><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a><a class="anchor-link" href="#1.4-Functions,-Scoping,-and-Other-Fun-Stuff">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.1-Learning-Objectives">1.4.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2-Functions">1.4.2 Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.1-Calling-functions">1.4.2.1 Calling functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.2-Return-Values">1.4.2.2 Return Values</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.3-Docstrings-and-Help">1.4.2.3 Docstrings and Help</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.3-Scope">1.4.3 Scope</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.4-Recursion">1.4.4 Recursion</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.5-Modules">1.4.5 Modules</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.6-Files">1.4.6 Files</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7-Example:-High/Low-Guess-My-Number-Game">1.4.7 Example: High/Low Guess My Number Game</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.1-Instructions">1.4.7.1 Instructions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.2-Pseudocode">1.4.7.2 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.3-Python-Implementation">1.4.7.3 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.4-Testing">1.4.7.4 Testing</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.5-List,-Dictionaries,-and-Enumeration"><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a><a class="anchor-link" href="#1.5-List,-Dictionaries,-and-Enumeration">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.1-Learning-Objectives">1.5.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.2-Lists">1.5.2 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3-Dictionaries">1.5.3 Dictionaries</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.1-Example:-Shopping-List">1.5.3.1 Example: Shopping List</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">1.5.3.2 Another Example: Chemical Symbols and Element Names</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.3-Dictionary-of-Dictionaries">1.5.3.3 Dictionary of Dictionaries</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4-Enumerate">1.5.4 Enumerate</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.1-Lists">1.5.4.1 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.2-Dictionaries">1.5.4.2 Dictionaries</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.6-Linear-Algebra-with-Numpy-and-Scipy"><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a><a class="anchor-link" href="#1.6-Linear-Algebra-with-Numpy-and-Scipy">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.1-Learning-Objectives">1.6.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2-NumPy-Arrays">1.6.2 NumPy Arrays</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.1-Getting-Started">1.6.2.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.2-Creating-Arrays-in-Neat-Ways">1.6.2.2 Creating Arrays in Neat Ways</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.3-Operations-on-Arrays">1.6.2.3 Operations on Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.4-Universal-Functions">1.6.2.4 Universal Functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.5-Copying-Arrays">1.6.2.5 Copying Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.6-Indexing,-Slicing,-and-Iterating">1.6.2.6 Indexing, Slicing, and Iterating</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.7-Complex-Numbers">1.6.2.7 Complex Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.8-Integrating-Everything-Together">1.6.2.8 Integrating Everything Together</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.7-Visualization-with-matplotlib"><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html">1.7 Visualization with matplotlib</a><a class="anchor-link" href="#1.7-Visualization-with-matplotlib">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.1-Learning-Objectives">1.7.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2-Matplotlib-Basics">1.7.2 Matplotlib Basics</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.1-3b-i.-Customizing-Plots">1.7.2.1 3b-i. Customizing Plots</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.2-3b-ii.-Plotting-multiple-lines">1.7.2.2 3b-ii. Plotting multiple lines</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.3-Publication-Quality-Figures">1.7.3 Publication Quality Figures</a></li>
-</ul>
-<h3 id="1.8-Manipulating-Data-with-Pandas"><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html">1.8 Manipulating Data with Pandas</a><a class="anchor-link" href="#1.8-Manipulating-Data-with-Pandas">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.1-Learning-Objectives">1.8.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2-Working-with-Data-Using-Pandas">1.8.2 Working with Data Using Pandas</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.1-Loading-and-Inspecting-Data">1.8.2.1 Loading and Inspecting Data</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.2-Computing-Summary-Statistics">1.8.2.2 Computing Summary Statistics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.3-Combining-Pandas-and-Matplotlib">1.8.2.3 Combining Pandas and Matplotlib</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3-Investment-Strategies">1.8.3 Investment Strategies</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.1-Getting-Started">1.8.3.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.2-Portfolio-Calculator">1.8.3.2 Portfolio Calculator</a></li>
-</ul>
-</li>
-<li>Markdown Links<ul>
-<li><a href="http://highered.mheducation.com/sites/0073401331/student_view0/data_sets.html">the publisher</a></li>
-<li><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html">10 minutes to pandas</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.9-Functions-as-Arguments"><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a><a class="anchor-link" href="#1.9-Functions-as-Arguments">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.1-Learning-Objectives">1.9.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2-Functions-passed-to-Functions">1.9.2 Functions passed to Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.1-Motivating-Example:-Midpoint-Integration">1.9.2.1 Motivating Example: Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.2-Convergence-Analysis">1.9.2.2 Convergence Analysis</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.3-A-Fancier-Integration-Function">1.9.2.3 A Fancier Integration Function</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3-Lambda-Functions">1.9.3 Lambda Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.1-Example:-Lambda-Functions-and-Midpoint-Integration">1.9.3.1 Example: Lambda Functions and Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.2-4c-ii.-Extension-to-Two-Dimensional-Functions">1.9.3.2 4c-ii. Extension to Two Dimensional Functions</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.10-Testing-and-Debugging-in-Python"><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html">1.10 Testing and Debugging in Python</a><a class="anchor-link" href="#1.10-Testing-and-Debugging-in-Python">&#182;</a></h3>
-<pre><code>- [1.10.1 Learning Objectives](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Learning-Objectives)
-</code></pre>
+<p><!--NOTEBOOK_HEADER--><em>This notebook contains material for CBE 20258 Numerical and Statistical Analysis taught at the University of Notre Dame. (c) Professors Alexander Dowling, Ryan McClarren, and Yamil Colón. This page <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a> in addition to the entire course contents are available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.04-Functions-scoping.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IMPORT DATA FILES USED BY THIS NOTEBOOK</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span>  <span class="nn">requests</span>
+
+<span class="n">file_links</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;data/fifth_republic.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;https://ndcbe.github.io/cbe-xx258/data/fifth_republic.txt&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;data/hats.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;https://ndcbe.github.io/cbe-xx258/data/hats.txt&quot;</span><span class="p">)]</span>
+
+<span class="c1"># This cell has been added by nbpages. Run this cell to download data files required for this notebook.</span>
+
+<span class="k">for</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">fileurl</span> <span class="ow">in</span> <span class="n">file_links</span><span class="p">:</span>
+    <span class="n">stem</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">stem</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">stem</span><span class="p">):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">stem</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fileurl</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.4-Functions,-Scoping,-and-Other-Fun-Stuff">1.4 Functions, Scoping, and Other Fun Stuff<a class="anchor-link" href="#1.4-Functions,-Scoping,-and-Other-Fun-Stuff">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Reference</strong>: Chapter 3 of <em>Computational Nuclear Engineering and Radiological Science Using Python</em>, R. McClarren (2018)</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.1-Learning-Objectives">1.4.1 Learning Objectives<a class="anchor-link" href="#1.4.1-Learning-Objectives">&#182;</a></h2><p>After studying this notebook, completing the activities, and asking questions in class, you should be able to:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.2-Functions">1.4.2 Functions<a class="anchor-link" href="#1.4.2-Functions">&#182;</a></h2><h3 id="Motivating-Example">Motivating Example<a class="anchor-link" href="#Motivating-Example">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why use functions? We want to write, debug, and test code <strong>once</strong> and then <strong>reuse</strong> as much as possible.</p>
+<p>In a few class sessions, we'll formulate mass balances as linear systems and solve them using Python. But for now, let's just consider a problem you would expect to see in math class:</p>
+<p>We want to solve the linear system,</p>
+$$\mathrm{Eqn.~1}:\quad 4.5 x + 3 y = 10.5\\\mathrm{Eqn.~2}:\quad 1.5 x + 3 y = 7.5.$$<p>One way to do this is using Python as calculator. In the comments below, we walk through the steps.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;python code to solve </span>
+<span class="sd">4.5 x + 3 y = 10.5</span>
+<span class="sd">1.5 x + 3 y = 7.5</span>
+<span class="sd">by solving the second equation for y first,</span>
+<span class="sd">and then solving for x&quot;&quot;&quot;</span>
+<span class="c1">#step 1 solve for y, multiply equation 2 by -3, </span>
+<span class="c1">## and add to first equation</span>
+<span class="n">LHS_coefficient</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span> <span class="c1">#the coefficient for y</span>
+<span class="n">RHS</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="mf">7.5</span> <span class="o">+</span> <span class="mf">10.5</span> <span class="c1">#the right-hand side</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;LHS_coefficient:&#39;</span><span class="p">,</span><span class="n">LHS_coefficient</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;RHS:&#39;</span><span class="p">,</span><span class="n">RHS</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mathematical, we started by multiplying equation 2,</p>
+$$1.5 x + 3 y = 7.5$$<p>by -3,</p>
+$$(-3) \times 1.5 x + (-3) \times 3 y = (-3) \times 7.5$$<p>and then added this scaled equation 2 to equation 1, giving:</p>
+$$(4.5 - 3 \times 1.5) x + (3 - 3 \times 3) y = 10.5 - 3 \times 7.5$$<p>Notice that our choice of scaling equation 2 by -3 means that the coefficient for x becomes zero after addition addition. The coefficient for $y$ is <code>LHS_coefficient</code> is our code. <code>RHS</code> is the right hand side of the new equation.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#now divide right-hand side by left-hand side coefficient</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">RHS</span> <span class="o">/</span> <span class="n">LHS_coefficient</span>
+<span class="c1">#plug y into first equation</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mf">10.5</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="mf">4.5</span> 
+<span class="c1">#print the solution, note \n produces a linebreak</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The solution to:</span><span class="se">\n</span><span class="s2">4.5 x + 3 y = 10.5</span><span class="se">\n</span><span class="s2">1.5 x + 3 y = 7.5</span><span class="se">\n</span><span class="s2"> is x =&quot;</span><span class="p">,</span>
+      <span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The solution to:
+4.5 x + 3 y = 10.5
+1.5 x + 3 y = 7.5
+ is x = 1.0 y= 2.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>How to extend this code to another linear system?</p>
+<p><strong>Let's define a function</strong> that will solve the system for (almost) any coefficients and right-hand side.</p>
+<p>I'll define such a function to solve $$a_1 x + b_1 y = c_1\\ a_2 x + b_2 y = c_2.$$</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Write pseudocode to generalize the steps from the motivating example to solve the linear system with coefficients a1, a2, b1, b2, c1, and c2. Turn in your pseudocode via Gradescope. We will only look at your pseudocode for completeness and compliance with the formatting guidelines, not correctness.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,0,255,0.05) ; padding: 10px; border: 1px solid darkblue;"> 
+<b>Class Activity</b>: Discuss your pseudocode with a partner. Give one compliment and one suggestion to partner's pseudocode. We'll then regroup and write it together as a class.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below is a function that solves (most) 2x2 linear systems. Take a few minutes to study the code below. Specifically:</p>
 <ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Testing-Your-Code">1.10.1 Testing Your Code</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">1.10.1.1 Test 0: Takes Inputs as Advertised?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.2-Test-1:-Initial-Condition">1.10.1.2 Test 1: Initial Condition</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.3-Test-2:-Asymptotics">1.10.1.3 Test 2: Asymptotics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.4-Test-3:-Check-a-Few-Inputs">1.10.1.4 Test 3: Check a Few Inputs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Debugging-is-a-Mindset">1.10.1 Debugging is a Mindset</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.2-Test-2">1.10.2 Test 2</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.3-Test-3">1.10.3 Test 3</a></li>
-</ul>
-</li>
+<li>Notice the function has seven inputs. The first six are the coefficients. The seventh, <code>LOUD</code>, is followed by <code>=False</code>. This sets the default value of <code>LOUD</code> to false.</li>
+<li>The input <code>LOUD</code> toggles on/off a print statement.</li>
+<li>This function has a long comment string at the top. It includes a brief description, then a list of inputs (arguments) and finally a list of outputs (returns). All of the functions you write in this class must be commented in the same style.</li>
 </ul>
 
 </div>
 </div>
 </div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">b1</span><span class="p">,</span><span class="n">c1</span><span class="p">,</span><span class="n">a2</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span> <span class="n">LOUD</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calculate the solution of the system </span>
+<span class="sd">    a1 x + b1 y = c1, </span>
+<span class="sd">    a2 x + b2 y = c2</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        a1: x coefficient in first equation (cannot be zero)</span>
+<span class="sd">        b1: y coefficient in first equation</span>
+<span class="sd">        c1: right-hand side in first equation</span>
+<span class="sd">        a2: x coefficient in second equation </span>
+<span class="sd">        b2: y coefficient in second equation </span>
+<span class="sd">        c2: right-hand side in second equation</span>
+<span class="sd">        LOUD: boolean that decides whether to print out the answer</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        list containing the solution in the format [x,y]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#step one, eliminate x from the second equation by </span>
+    <span class="c1">#multiplying first equation by -a2/a1</span>
+    <span class="c1">#and then adding it to second equation</span>
+    <span class="n">new_b2</span> <span class="o">=</span> <span class="n">b2</span> <span class="o">-</span> <span class="n">a2</span><span class="o">/</span><span class="n">a1</span><span class="o">*</span><span class="n">b1</span>
+    <span class="n">new_c2</span> <span class="o">=</span> <span class="n">c2</span> <span class="o">-</span> <span class="n">a2</span><span class="o">/</span><span class="n">a1</span><span class="o">*</span><span class="n">c1</span>
+    <span class="c1">#solve the new equation 2</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">new_c2</span><span class="o">/</span><span class="n">new_b2</span>
+    <span class="c1">#plug y into original equation 1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">c1</span><span class="o">-</span><span class="n">b1</span><span class="o">*</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="n">a1</span>
+    
+    <span class="k">if</span> <span class="p">(</span><span class="n">LOUD</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The solution to:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">a1</span><span class="p">,</span><span class="s2">&quot;x +&quot;</span><span class="p">,</span><span class="n">b1</span><span class="p">,</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="n">c1</span><span class="p">,</span>
+              <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">a2</span><span class="p">,</span><span class="s2">&quot;x +&quot;</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="n">c2</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"> is x =&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can call this function for the problem above by typing</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="mf">4.5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">10.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mf">7.5</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The solution to:
+ 4.5 x + 3 y = 10.5 
+ 1.5 x + 3 y = 7.5 
+ is x = 1.0 y= 2.0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1.0, 2.0]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also solve other systems, including simple ones</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The solution to:
+ 1 x + 0 y = 3 
+ 0 x + 1 y = 2 
+ is x = 3.0 y= 2.0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[3.0, 2.0]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can't solve systems where $a_1$ is zero because our function divides by $a_1$:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-6-5036cb57389a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>two_by_two_solver<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-3-bade12b85c5d&gt;</span> in <span class="ansi-cyan-fg">two_by_two_solver</span><span class="ansi-blue-fg">(a1, b1, c1, a2, b2, c2, LOUD)</span>
+<span class="ansi-green-intense-fg ansi-bold">     19</span>     <span class="ansi-red-fg">#multiplying first equation by -a2/a1</span>
+<span class="ansi-green-intense-fg ansi-bold">     20</span>     <span class="ansi-red-fg">#and then adding it to second equation</span>
+<span class="ansi-green-fg">---&gt; 21</span><span class="ansi-red-fg">     </span>new_b2 <span class="ansi-blue-fg">=</span> b2 <span class="ansi-blue-fg">-</span> a2<span class="ansi-blue-fg">/</span>a1<span class="ansi-blue-fg">*</span>b1
+<span class="ansi-green-intense-fg ansi-bold">     22</span>     new_c2 <span class="ansi-blue-fg">=</span> c2 <span class="ansi-blue-fg">-</span> a2<span class="ansi-blue-fg">/</span>a1<span class="ansi-blue-fg">*</span>c1
+<span class="ansi-green-intense-fg ansi-bold">     23</span>     <span class="ansi-red-fg">#solve the new equation 2</span>
+
+<span class="ansi-red-fg">ZeroDivisionError</span>: division by zero</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.2.1-Calling-functions">1.4.2.1 Calling functions<a class="anchor-link" href="#1.4.2.1-Calling-functions">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Approach above: give inputs in order</strong></p>
+<p>We called the function <tt>two_by_two_solver</tt> by listing out the arguments in the order that it expects them <tt>a1, b1, c1, a2, b2, c2, LOUD</tt>.</p>
+<p><strong>Another option: use keywords</strong></p>
+<p>Python allows you to call them in any order, as long as you are explicit in what goes where.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">4.5</span><span class="p">,</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> 
+                  <span class="n">a2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> 
+                  <span class="n">c1</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">,</span> <span class="n">LOUD</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It is often a good idea to call a function explicitly (with keywords). That way if you mess up the order of the arguments, it does not matter.</p>
+<p>Notice that in the function definition, the argument <tt>LOUD</tt> has <tt>=False</tt> after it.  This indicates that if the function is called without a value for <tt>LOUD</tt>, it assumes the caller does not what the function to "be loud".</p>
+<p>In other words, <tt>False</tt> is the <strong>default</strong> for argument <tt>LOUD</tt>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">4.5</span><span class="p">,</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">a2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> 
+                  <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">c1</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that it did not print out it's spiel about the system.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">two_by_two_solver</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">a2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.2.2-Return-Values">1.4.2.2 Return Values<a class="anchor-link" href="#1.4.2.2-Return-Values">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At the end of the function we have a return statement.  This tells python what the function is returning to the caller.  In this case we return a list that has the solution for $x$ and $y$.  We can store this in a new variable, or do whatever we like with it.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="n">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">4.5</span><span class="p">,</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">a2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> 
+                           <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">c1</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#store in the variable x the first value in the list answer</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">answer</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1">#store in the variable y the first value in the list answer</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list&quot;</span><span class="p">,</span><span class="n">answer</span><span class="p">,</span><span class="s2">&quot;contains&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;and&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Solve the linear system given below and store the answers in `my_x` and `my_y`. This will be auto-graded.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+$$ 2 x -1 y = 3\\ -4 x + 3 y = 0.$$
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can do even fancier things, if we are so bold</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#just get x</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">4.5</span><span class="p">,</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">a2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> 
+                      <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">c1</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1">#assign variables to the output on the fly</span>
+<span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">two_by_two_solver</span><span class="p">(</span><span class="n">a1</span> <span class="o">=</span> <span class="mf">4.5</span><span class="p">,</span> <span class="n">b1</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">a2</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span> 
+                        <span class="n">b2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">c1</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">,</span> <span class="n">c2</span> <span class="o">=</span> <span class="mf">7.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>These examples are more advanced and they are designed to show you some of the neat tricks you can do in python.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.2.3-Docstrings-and-Help">1.4.2.3 Docstrings and Help<a class="anchor-link" href="#1.4.2.3-Docstrings-and-Help">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our 2x2 solver code had a long, and pretty detailed comment at the beginning of it.  This is called a <strong>docstring</strong> and it is printed by a user by typing</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">two_by_two_solver</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The point of this long comment is to communicate to other people:</p>
+<ol>
+<li>The main idea behind the function.</li>
+<li>What the function expects from you. <strong>Inputs.</strong></li>
+<li>What the function gives you. <strong>Outputs.</strong>  </li>
+</ol>
+<p>In this example we can see that we need to provide at least 6 numbers, and possibly an optional boolean.</p>
+<p><b>It is good programming practice to include good docstrings.  It will be mandatory for any code you turn in this class.</b></p>
+<p>Let's look at the docstring for some members of the <tt>math</tt> module and the <tt>random</tt> module.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">help</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We don't have the source code for these functions in front of us, but if we want to know how to call them (and we didn't want to Google® them), the docstrings tell us what to do.</p>
+<p>You may wonder why those docstrings are a bit different that the one I used.  The format for mine is derived from the &lt;a, href="<a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html#Comments&quot;&gt;">http://google-styleguide.googlecode.com/svn/trunk/pyguide.html#Comments&quot;&gt;</a> Google coding standards for python docstrings&lt;/a&gt;.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">nothing</span><span class="p">():</span>
+    <span class="c1">#this function does nothing</span>
+    <span class="c1">#docstring?</span>
+    <span class="k">return</span> <span class="mi">0</span>
+<span class="n">help</span><span class="p">(</span><span class="n">nothing</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.3-Scope">1.4.3 Scope<a class="anchor-link" href="#1.4.3-Scope">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When we call a function, it carves out in the computer's memory its own space. Variables that live in the special space, known as <em>local scope</em> are completely different than those in other parts of the program. Here's a simple, but illustrative example:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Before you run the code below, predict the output. This is good practice for exam questions, where you'll be asked to predict the output of Python code without access to a computer.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Home Activity - Your Predictions</strong></p>
+<p><code>x =</code></p>
+<p><code>new_x =</code></p>
+<p><code>y =</code></p>
+<p><code>new_y =</code></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">scope_demonstration</span><span class="p">(</span><span class="n">input_variable</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; A simple demonstration of scoping rules</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        input_variable: a string or number</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        x: --REDACTED TO NOT GIVE AWAY THE ACTIVITY ANSWER --</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">input_variable</span><span class="o">*</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="c1">#now call the function after defining some variables</span>
+<span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;oui &quot;</span>
+<span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;no &quot;</span>
+
+<span class="n">new_x</span> <span class="o">=</span> <span class="n">scope_demonstration</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">new_y</span> <span class="o">=</span> <span class="n">scope_demonstration</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">new_x =&quot;</span><span class="p">,</span><span class="n">new_x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y =&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">new_y =&quot;</span><span class="p">,</span><span class="n">new_y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When I call <tt>scope_demonstration</tt> it creates its own memory space and any variable I create in there is different than in the rest of the program, even if the variables have the same name.</p>
+<p>There are many subleties in scoping rules, but this example outlines just about everything that you'll need to know as a neophyte programmer.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A variable declared at the top level Python file, i.e., outside a function, is in the global scope for that file. This is easiest to see in an example:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">print_my_var</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; Another scope demonstration</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        Nothing</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Nothing</span>
+<span class="sd">        </span>
+<span class="sd">    Other:</span>
+<span class="sd">        prints `my_var`</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="n">print_my_var</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We were able to access <code>my_var</code> inside the function even though it was not an input to a function.</p>
+<p>The next natural guess is can we modify <code>my_var</code> with a function? Let's see.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">change_my_var</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; A third scope demonstration</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        Nothing</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        Nothing</span>
+<span class="sd">        </span>
+<span class="sd">    Other:</span>
+<span class="sd">        Attempts to change `my_var, prints to screen</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="n">my_var</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">my_var</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;my_var = &quot;</span><span class="p">,</span><span class="n">my_var</span><span class="p">,</span><span class="s2">&quot; inside the function&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="kc">None</span>
+
+<span class="n">change_my_var</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;my_var =&quot;</span><span class="p">,</span><span class="n">my_var</span><span class="p">,</span><span class="s2">&quot; outside the function&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We got an error message! In Python, we can only access <code>my_var</code> inside functions. We cannot change it inside functions. If we wanted to change my_var, we would need to do the following:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">change_my_var2</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39; A third scope demonstration</span>
+<span class="sd">    </span>
+<span class="sd">    Args:</span>
+<span class="sd">        Nothing</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        New value of my_var</span>
+<span class="sd">        </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">return</span> <span class="mi">3</span><span class="o">*</span><span class="n">my_var</span> <span class="o">+</span> <span class="mi">2</span>
+
+<span class="n">my_var</span> <span class="o">=</span> <span class="n">change_my_var2</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now my_var =&quot;</span><span class="p">,</span><span class="n">my_var</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,0,255,0.05) ; padding: 10px; border: 1px solid darkblue;"> 
+<b>Class Activity</b>: Take 30 seconds to predict the output of the code below without running it. Below are multiple choice answers.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_func1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; A simple function to demonstrate the nuances of scope</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        x: scalar real number</span>
+<span class="sd">        y: scalar real number</span>
+<span class="sd">        </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        z: scalar real number</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">-</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">z</span>
+
+<span class="c1"># Run the function</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">my_func1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="c1"># Print values of x, y, and z to screen</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x =&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;  y =&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s2">&quot;  z =&quot;</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Class Activity multiple choice answers</strong>:</p>
+<ol>
+<li>x=1, y=1, z=2</li>
+<li>x=1, y=1, z=3</li>
+<li>x=3, y=0, z=2</li>
+<li>x=3, y=0, x=3</li>
+<li>None of these</li>
+</ol>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Create your answer here.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.4-Recursion">1.4.4 Recursion<a class="anchor-link" href="#1.4.4-Recursion">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The idea behind recursion is that a function can call itself.  That is really it. That capability can allow some neat tricks, but in practice there is often a faster way of doing things than using recursion.</p>
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+    <b>Home Activity</b>: Write pseudcode to calculate the factorial of integer <tt>x</tt> two ways: i) without recursion and ii) with recursion. Submit your pseudocode via Gradescope. We'll only assess for completeness (making an attempt, following guidelines) and not accuracy. <b>Be sure to bring your pseudocode to class.</b>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,0,255,0.05) ; padding: 10px; border: 1px solid darkblue;"> 
+<b>Class Activity</b>: Explain your pseudocode to a partner. One person explains without recursion and the other explains with recurison.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below are two functions that calculate factorial with and without recurision.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">prev</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span><span class="p">((</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">)):</span>
+        <span class="n">prev</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">prev</span><span class="p">)</span><span class="o">*</span><span class="n">n</span>
+    <span class="k">return</span> <span class="n">prev</span>
+
+<span class="k">def</span> <span class="nf">factorial_no_recursion</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="c1">#can skip 1 because x*1 = 1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">*</span><span class="n">i</span>
+    <span class="k">return</span> <span class="n">output</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an integer: &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;! =&quot;</span><span class="p">,</span><span class="n">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;! =&quot;</span><span class="p">,</span><span class="n">factorial_no_recursion</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter an integer: 212
+212 ! = 4733702182912325971198157282773458528972111665671644583063162654840567216299326200333597974632020795344694044141162288574741860330707871653991802372413420954892019572846468089404909755852192508097446724647826768577878987213960691804730882223315446309650598202756704313010742315578131345078364709758529795655446581758477730600169824143256656411069775872000000000000000000000000000000000000000000000000000
+212 ! = 4733702182912325971198157282773458528972111665671644583063162654840567216299326200333597974632020795344694044141162288574741860330707871653991802372413420954892019572846468089404909755852192508097446724647826768577878987213960691804730882223315446309650598202756704313010742315578131345078364709758529795655446581758477730600169824143256656411069775872000000000000000000000000000000000000000000000000000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's see which is faster. This will use some ipython magic commands for timing execution. We'll compute the factorials of 0 through 20, 100,000 times.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="k">for</span> <span class="n">times</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">):</span>
+        <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CPU times: user 3.19 s, sys: 26.5 ms, total: 3.22 s
+Wall time: 3.22 s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%time</span>
+<span class="k">for</span> <span class="n">times</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">):</span>
+        <span class="n">factorial_no_recursion</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CPU times: user 1.38 s, sys: 12 ms, total: 1.39 s
+Wall time: 1.39 s
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Side-tangent</em>: wall versus CPU user versus CPU clock time:
+<a href="https://stackoverflow.com/questions/7335920/what-specifically-are-wall-clock-time-user-cpu-time-and-system-cpu-time-in-uni">https://stackoverflow.com/questions/7335920/what-specifically-are-wall-clock-time-user-cpu-time-and-system-cpu-time-in-uni</a>
+(Side-tangents will not appear in tests or assignments, but are given to satisfy your curiosity.)</p>
+<p>The no recursion version, while not as neat, is nearly 50% faster. It is also possible to have too many levels of recursion.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="c1"># change this to answer the home activity question</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="c1">#this won&#39;t work and prints ~1000 errors</span>
+<span class="c1">#the errors are not repeated here</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;! =&quot;</span><span class="p">,</span><span class="n">factorial</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">RecursionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-10-f352ad03aa45&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-red-fg">#this won&#39;t work and prints ~1000 errors</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-red-fg">#the errors are not repeated here</span>
+<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#34;! =&#34;</span><span class="ansi-blue-fg">,</span>factorial<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">&lt;ipython-input-7-330ea1369dd6&gt;</span> in <span class="ansi-cyan-fg">factorial</span><span class="ansi-blue-fg">(n, prev)</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> factorial<span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">,</span> prev<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">==</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">or</span> <span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">==</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">         </span>prev <span class="ansi-blue-fg">=</span> factorial<span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span>prev<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">*</span>n
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">return</span> prev
+<span class="ansi-green-intense-fg ansi-bold">      5</span> 
+
+... last 1 frames repeated, from the frame below ...
+
+<span class="ansi-green-fg">&lt;ipython-input-7-330ea1369dd6&gt;</span> in <span class="ansi-cyan-fg">factorial</span><span class="ansi-blue-fg">(n, prev)</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">def</span> factorial<span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">,</span> prev<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">==</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">or</span> <span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">==</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg">         </span>prev <span class="ansi-blue-fg">=</span> factorial<span class="ansi-blue-fg">(</span>n<span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span>prev<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">*</span>n
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">return</span> prev
+<span class="ansi-green-intense-fg ansi-bold">      5</span> 
+
+<span class="ansi-red-fg">RecursionError</span>: maximum recursion depth exceeded in comparison</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: What is the smallest recursion limit for which <tt>factorial(1000)</tt> works?
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="c1">#this works</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="n">factorial_no_recursion</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;! =&quot;</span><span class="p">,</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1000 ! = 402387260077093773543702433923003985719374864210714632543799910429938512398629020592044208486969404800479988610197196058631666872994808558901323829669944590997424504087073759918823627727188732519779505950995276120874975462497043601418278094646496291056393887437886487337119181045825783647849977012476632889835955735432513185323958463075557409114262417474349347553428646576611667797396668820291207379143853719588249808126867838374559731746136085379534524221586593201928090878297308431392844403281231558611036976801357304216168747609675871348312025478589320767169132448426236131412508780208000261683151027341827977704784635868170164365024153691398281264810213092761244896359928705114964975419909342221566832572080821333186116811553615836546984046708975602900950537616475847728421889679646244945160765353408198901385442487984959953319101723355556602139450399736280750137837615307127761926849034352625200015888535147331611702103968175921510907788019393178114194545257223865541461062892187960223838971476088506276862967146674697562911234082439208160153780889893964518263243671616762179168909779911903754031274622289988005195444414282012187361745992642956581746628302955570299024324153181617210465832036786906117260158783520751516284225540265170483304226143974286933061690897968482590125458327168226458066526769958652682272807075781391858178889652208164348344825993266043367660176999612831860788386150279465955131156552036093988180612138558600301435694527224206344631797460594682573103790084024432438465657245014402821885252470935190620929023136493273497565513958720559654228749774011413346962715422845862377387538230483865688976461927383814900140767310446640259899490222221765904339901886018566526485061799702356193897017860040811889729918311021171229845901641921068884387121855646124960798722908519296819372388642614839657382291123125024186649353143970137428531926649875337218940694281434118520158014123344828015051399694290153483077644569099073152433278288269864602789864321139083506217095002597389863554277196742822248757586765752344220207573630569498825087968928162753848863396909959826280956121450994871701244516461260379029309120889086942028510640182154399457156805941872748998094254742173582401063677404595741785160829230135358081840096996372524230560855903700624271243416909004153690105933983835777939410970027753472000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>By the way, I'm surprised it is giving the correct <a href="http://justinwhite.com/big-calc/1000.html">answer.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.5-Modules">1.4.5 Modules<a class="anchor-link" href="#1.4.5-Modules">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Sometimes we have to define many functions and don't want to have one giant source file (in fact this is good programming practice). I've created a file called <tt>sphere.py</tt> in the same directory as this notebook. This file defines two functions <tt>volume</tt> and <tt>surface_area</tt> that compute the volume and surface area of a sphere. Because the file is called <tt>sphere.py</tt> we can import those functions using <tt>import sphere</tt>.  The text of <tt>sphere.py</tt> is
+<code>
+def volume(radius):
+    """compute volume of a sphere</p>
+
+<pre><code>Args:
+radius: float giving the radius of the sphere
+
+Returns:
+volume of the sphere as a float
+"""
+return 4.0/3.0*math.pi*radius**3
+
+</code></pre>
+<p>def surface_area(radius):
+    """compute surface area of a sphere</p>
+
+<pre><code>Args:
+radius: float giving the radius of the sphere
+
+Returns:
+surface area of the sphere as a float
+"""
+return 4.0*math.pi*radius**2
+</code></pre>
+<p>&lt;/code&gt;</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I can use the help function to tell me about the module:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sphere</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-12-6ee0c90e35fb&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> sphere
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;sphere&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that I have imported the module, we can can the <code>help</code> to see the docstring.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">sphere</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The volume of a sphere of radius&quot;</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="s2">&quot;cm is&quot;</span><span class="p">,</span>
+      <span class="n">sphere</span><span class="o">.</span><span class="n">volume</span><span class="p">(</span><span class="n">r</span><span class="p">),</span><span class="s2">&quot;cm**3&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The surface area of a sphere of radius&quot;</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="s2">&quot;cm is&quot;</span><span class="p">,</span>
+      <span class="n">sphere</span><span class="o">.</span><span class="n">surface_area</span><span class="p">(</span><span class="n">r</span><span class="p">),</span><span class="s2">&quot;cm**2&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.6-Files">1.4.6 Files<a class="anchor-link" href="#1.4.6-Files">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It is very easy to read in text files in python. The file <tt>fifth_republic.txt</tt>, lists the presidents of France's fifth republic. It is in the same folder as this notebook.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In Python, we can read it in very simply:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/fifth_republic.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> 
+<span class="c1">#open fifth_republic.txt for reading (&#39;r&#39;)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+    <span class="c1"># Repeat the first 5 characters 3 times</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CharlCharlCharl
+GeorgGeorgGeorg
+ValérValérValér
+FrançFrançFranç
+JacquJacquJacqu
+NicolNicolNicol
+FrançFrançFranç
+EmmanEmmanEmman
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice how the for loop can iterate through each line of the file. You can also read a line at a time.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/fifth_republic.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="c1">#open fifth_republic.txt for reading (&#39;r&#39;)</span>
+
+<span class="c1"># Read the first line</span>
+<span class="n">first_line</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+
+<span class="c1"># Read the second line</span>
+<span class="n">second_line</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_line</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">second_line</span><span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Charles de Gaulle
+
+Georges Pompidou
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">readline</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on built-in function readline:
+
+readline(size=-1, /) method of _io.TextIOWrapper instance
+    Read until newline or EOF.
+    
+    Returns an empty string if EOF is hit immediately.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also easily write to a file.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">writeFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./data/hats.txt&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> 
+<span class="c1">#open hats.txt to write (clobber if it exists)</span>
+<span class="n">hats</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;fedora&quot;</span><span class="p">,</span><span class="s2">&quot;trilby&quot;</span><span class="p">,</span><span class="s2">&quot;porkpie&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tam o&#39;shanter&quot;</span><span class="p">,</span><span class="s2">&quot;Phrygian cap&quot;</span><span class="p">,</span><span class="s2">&quot;Beefeaters&#39; hat&quot;</span><span class="p">,</span><span class="s2">&quot;sombrero&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">hat</span> <span class="ow">in</span> <span class="n">hats</span><span class="p">:</span>
+    <span class="n">writeFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">hat</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1">#add the endline</span>
+<span class="n">writeFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1">#now open file and print</span>
+<span class="n">readFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./data/hats.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">readFile</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+<span class="n">readFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>fedora
+
+trilby
+
+porkpie
+
+tam o&#39;shanter
+
+Phrygian cap
+
+Beefeaters&#39; hat
+
+sombrero
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also use <code>enumerate</code> with a text file:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/fifth_republic.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Charles de Gaulle
+
+Georges Pompidou
+
+Valéry Giscard d&#39;Estaing
+
+François Mitterrand
+
+Jacques Chirac
+
+Nicolas Sarkozy
+
+François Hollande
+
+Emmanuel Macron
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4.7-Example:-High/Low-Guess-My-Number-Game">1.4.7 Example: High/Low Guess My Number Game<a class="anchor-link" href="#1.4.7-Example:-High/Low-Guess-My-Number-Game">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.7.1-Instructions">1.4.7.1 Instructions<a class="anchor-link" href="#1.4.7.1-Instructions">&#182;</a></h3><p>Write pseudocode and Python function program to interactively play the following game:</p>
+<ol>
+<li>Generate a random integer number between 0 and 100.</li>
+<li>Ask the player to guess a number. Capture their input from the keyboard.</li>
+<li>Check if the number is valid (between 0 and 100, integer). If not, warn the player and
+goto Step 2.</li>
+<li>If the player’s guess is correct, they win. Print out “Congratulations” and tell them
+how many guesses it took. Only count valid guesses. Terminate the program.</li>
+<li>If the guess is too low, print “Guess is too low.” and goto Step 2.</li>
+<li>If the guess is too high, print “Guess is too high.” and goto Step 2.</li>
+</ol>
+<p>First write the pseudocode and then implement as a function in Python. Test your program at least 2 times.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.7.2-Pseudocode">1.4.7.2 Pseudocode<a class="anchor-link" href="#1.4.7.2-Pseudocode">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.7.3-Python-Implementation">1.4.7.3 Python Implementation<a class="anchor-link" href="#1.4.7.3-Python-Implementation">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import libraries</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># function to accept guess from user and determine if guess matches secret </span>
+<span class="c1"># number between 0 and 100</span>
+<span class="k">def</span> <span class="nf">guessing_game</span><span class="p">(</span><span class="n">rand_num</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Play the guess my number interactively with keyboard input</span>
+<span class="sd">    </span>
+<span class="sd">        Argument:</span>
+<span class="sd">            rand_num: the random (secret) number. If None (default), the program generates</span>
+<span class="sd">                a random integer between 0 and 100.</span>
+<span class="sd">            </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            Nothing</span>
+<span class="sd">            </span>
+<span class="sd">        Other:</span>
+<span class="sd">            Asks user for interactive keyboard input that are integers</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.7.4-Testing">1.4.7.4 Testing<a class="anchor-link" href="#1.4.7.4-Testing">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test 1</strong>: No input. The function will automatically generate a secret number.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+Guess the number: 51
+Guess is too high
+
+Guess the number: 25
+Guess is too high
+
+Guess the number: 10
+Guess is too low
+
+Guess the number: 15
+Guess is too low
+
+Guess the number: 20
+Guess is too low
+
+Guess the number: 22
+Guess is too high
+
+Guess the number: 21
+
+Congratulations!  Your guess is correct.  Number is: 21
+Number of guesses: 7
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Test 2</strong>: What happens if we supply an out-of-bounds (invalid) secret number?</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Secret number if too small.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.04-Functions-scoping.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
     </div>
   </div>
 </body>

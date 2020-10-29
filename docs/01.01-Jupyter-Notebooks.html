@@ -13120,9 +13120,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><!--NOTEBOOK_HEADER-->
-<em>This notebook contains material from <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a>;
-content is available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
+<p><!--NOTEBOOK_HEADER--><em>This notebook contains material for CBE 20258 Numerical and Statistical Analysis taught at the University of Notre Dame. (c) Professors Alexander Dowling, Ryan McClarren, and Yamil Colón. This page <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a> in addition to the entire course contents are available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
 
 </div>
 </div>
@@ -13135,7 +13133,7 @@ content is available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><!--NAVIGATION-->
-&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">1.0 Python Primer</a> | <a href="toc.html">Contents</a> |<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">1.0 Python Primer</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
 
 </div>
 </div>
@@ -13158,8 +13156,7 @@ content is available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.1.1-Overview">1.1.1 Overview<a class="anchor-link" href="#1.1.1-Overview">&#182;</a></h2><p>During the next 10 minutes, we'll get acquainted with working in Jupyter notebooks and submitting assignments in Vocareum.</p>
-
+<h2 id="1.1.1-Quick-Python-Introduction">1.1.1 Quick Python Introduction<a class="anchor-link" href="#1.1.1-Quick-Python-Introduction">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13170,18 +13167,7 @@ content is available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.1.2-Quick-Python-Introduction">1.1.2 Quick Python Introduction<a class="anchor-link" href="#1.1.2-Quick-Python-Introduction">&#182;</a></h2>
-</div>
-</div>
-</div>
-
-
-
-    
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.1.2.1-Variables">1.1.2.1 Variables<a class="anchor-link" href="#1.1.2.1-Variables">&#182;</a></h3>
+<h3 id="1.1.1.1-Variables">1.1.1.1 Variables<a class="anchor-link" href="#1.1.1.1-Variables">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13306,7 +13292,7 @@ content is available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.1.2.2-Execution-Order">1.1.2.2 Execution Order<a class="anchor-link" href="#1.1.2.2-Execution-Order">&#182;</a></h3><p><strong>Note</strong>: When using Jupyter notebooks, it is very important to know that the cells can be executed out of order
+<h3 id="1.1.1.2-Execution-Order">1.1.1.2 Execution Order<a class="anchor-link" href="#1.1.1.2-Execution-Order">&#182;</a></h3><p><strong>Note</strong>: When using Jupyter notebooks, it is very important to know that the cells can be executed out of order
 (intentionally or not). The state of the environment (e.g., values of variables, imports, etc.) is defined by the execution
 order.</p>
 
@@ -13355,7 +13341,31 @@ retain the execution order as expected.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.1.3-Vocareum-Autograder">1.1.3 Vocareum Autograder<a class="anchor-link" href="#1.1.3-Vocareum-Autograder">&#182;</a></h2><p>We will use the autograder in Vocareum for homework assignments, which gives you instant feedback on your work. The autograder is confirmed to allow for unlimited submissions. You just need to wait 5 minutes between submissions.</p>
+<h2 id="1.1.2-Vocareum-Autograder">1.1.2 Vocareum Autograder<a class="anchor-link" href="#1.1.2-Vocareum-Autograder">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(255,0,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Note</b>: The autograder is NOT supported on Colab. All of the autograder tests and solutions have been stripped out of these notebooks.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We will use the autograder in Vocareum for homework assignments, which gives you instant feedback on your work. The autograder is confirmed to allow for unlimited submissions. You just need to wait 5 minutes between submissions.</p>
 <p>It is very important carefully read the assignment instructions. The autograder is simply executing logical checks behind the scenes. For example, if the assignment instructions say to store your final answer in the variable <code>final_ans</code> but you instead write <code>my_ans</code>, the autograder will mark it as wrong.</p>
 <h3 id="Our-First-Autograded-Submission">Our First Autograded Submission<a class="anchor-link" href="#Our-First-Autograded-Submission">&#182;</a></h3><p>We want to store the <strong>first seven elements</strong> of the Fibonaci sequence in the list <code>fib</code>. Below is an answer with a few mistakes:</p>
 
@@ -13448,8 +13458,65 @@ retain the execution order as expected.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.1.3-Gradescope">1.1.3 Gradescope<a class="anchor-link" href="#1.1.3-Gradescope">&#182;</a></h2><p>The autograde in Vocareum is nice for (near) instant feedback. But we'll also use Gradescope throughout the semester to collect assignments that require "pencil and paper" analysis or written discussion.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.3.1-Handwritten-Work">1.1.3.1 Handwritten Work<a class="anchor-link" href="#1.1.3.1-Handwritten-Work">&#182;</a></h3><p>We'll occassionally ask you to submit handwritten work (e.g., mathematical models, pseudocode) via Gradescope. Here are the instructions:</p>
+<ol>
+<li>Scan/photograph your work and convert to a single PDF. “Scanbot” (Android &amp; iOS), “CamScanner” (Android &amp; iOS) and “Scannable” (iOS) are great phone apps with free versions. There are also document scanners in the library. See the syllabus for more information.</li>
+<li>Upload the single PDF to Gradescope.</li>
+<li>Mark the sections as requested in Gradescope.</li>
+</ol>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.1.3.2-Notebooks">1.1.3.2 Notebooks<a class="anchor-link" href="#1.1.3.2-Notebooks">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><!--NAVIGATION-->
-&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">1.0 Python Primer</a> | <a href="toc.html">Contents</a> |<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">1.0 Python Primer</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
 
 </div>
 </div>

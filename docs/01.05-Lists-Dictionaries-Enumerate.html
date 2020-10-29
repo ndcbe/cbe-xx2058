@@ -1,8 +1,10 @@
+
+<!-- jinja2 template extends `full` to include cell tags in the html rendering of notebooks -->
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
 
-<title>toc</title>
+<title>Notebook</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13113,183 +13115,1596 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+
+    
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="cbe-xx258"><a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a><a class="anchor-link" href="#cbe-xx258">&#182;</a></h1><h2 id="Chapter-1.0-Python-Primer"><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html">Chapter 1.0 Python Primer</a><a class="anchor-link" href="#Chapter-1.0-Python-Primer">&#182;</a></h2><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.1-Why-Python?">1.0.1 Why Python?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.2-Chapter-Learning-Objectives">1.0.2 Chapter Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.00-Python-Primer.html#1.0.3-Activities">1.0.3 Activities</a></li>
-<li>Markdown Figures<ul>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-1-768x633.png">image1</a></li>
-<li><a href="https://jaxenter.com/wp-content/uploads/2019/01/octoverse-ml-2-768x636.png">image2</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum"><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html">1.1 Welcome to Jupyter Notebooks and Vocareum</a><a class="anchor-link" href="#1.1-Welcome-to-Jupyter-Notebooks-and-Vocareum">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1-Quick-Python-Introduction">1.1.1 Quick Python Introduction</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.1-Variables">1.1.1.1 Variables</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.1.2-Execution-Order">1.1.1.2 Execution Order</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.2-Vocareum-Autograder">1.1.2 Vocareum Autograder</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3-Gradescope">1.1.3 Gradescope</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.1-Handwritten-Work">1.1.3.1 Handwritten Work</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.01-Jupyter-Notebooks.html#1.1.3.2-Notebooks">1.1.3.2 Notebooks</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.2-Learning-Python-Basics"><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html">1.2 Learning Python Basics</a><a class="anchor-link" href="#1.2-Learning-Python-Basics">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.1-Learning-Objectives">1.2.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2-Hello-World-and-Interactive-Sessions">1.2.2 Hello World and Interactive Sessions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.2.1-Command-Line-Mode">1.2.2.1 Command Line Mode</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.3-Comments">1.2.3 Comments</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4-Errors">1.2.4 Errors</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.1-&quot;Good&quot;-Bugs">1.2.4.1 "Good" Bugs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.4.2-&quot;Bad&quot;-Bugs">1.2.4.2 "Bad" Bugs</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.5-Indentation">1.2.5 Indentation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.6-Input">1.2.6 Input</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7-Variables">1.2.7 Variables</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.1-Integers">1.2.7.1 Integers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.2-Floating-Point-Numbers">1.2.7.2 Floating Point Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.7.3-Built-in-Mathematical-Functions">1.2.7.3 Built-in Mathematical Functions</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.02-Variables.html#1.2.8-Strings-and-Overloading">1.2.8 Strings and Overloading</a></li>
-</ul>
-<h3 id="1.3-Flow-Control-and-Pseudocode"><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html">1.3 Flow Control and Pseudocode</a><a class="anchor-link" href="#1.3-Flow-Control-and-Pseudocode">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.1-Learning-Objectives">1.3.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.2-If-Statements">1.3.2 If Statements</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.3-Iteration-with-While-Loops">1.3.3 Iteration with While Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.4-For-Loops">1.3.4 For Loops</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.5-Pseudocode">1.3.5 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6-Estimate-$\pi$-by-throwing-darts">1.3.6 Estimate $\pi$ by throwing darts</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.1-Governing-Formula">1.3.6.1 Governing Formula</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2-Pseudocode">1.3.6.2 Pseudocode</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.1-Python-Implementation">1.3.6.2.1 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.2.2-Python">1.3.6.2.2 Python</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.3-Using-Help-to-Learn-More-About-a-Function">1.3.6.3 Using Help to Learn More About a Function</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.6.4-Another-Solution-Approach---With-Plots">1.3.6.4 Another Solution Approach - With Plots</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.03-Flow-control.html#1.3.7-TODO:-Add-another-pseudocode-example">1.3.7 TODO: Add another pseudocode example</a></li>
-</ul>
-<h3 id="1.4-Functions,-Scoping,-and-Other-Fun-Stuff"><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a><a class="anchor-link" href="#1.4-Functions,-Scoping,-and-Other-Fun-Stuff">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.1-Learning-Objectives">1.4.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2-Functions">1.4.2 Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.1-Calling-functions">1.4.2.1 Calling functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.2-Return-Values">1.4.2.2 Return Values</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.2.3-Docstrings-and-Help">1.4.2.3 Docstrings and Help</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.3-Scope">1.4.3 Scope</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.4-Recursion">1.4.4 Recursion</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.5-Modules">1.4.5 Modules</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.6-Files">1.4.6 Files</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7-Example:-High/Low-Guess-My-Number-Game">1.4.7 Example: High/Low Guess My Number Game</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.1-Instructions">1.4.7.1 Instructions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.2-Pseudocode">1.4.7.2 Pseudocode</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.3-Python-Implementation">1.4.7.3 Python Implementation</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html#1.4.7.4-Testing">1.4.7.4 Testing</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.5-List,-Dictionaries,-and-Enumeration"><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html">1.5 List, Dictionaries, and Enumeration</a><a class="anchor-link" href="#1.5-List,-Dictionaries,-and-Enumeration">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.1-Learning-Objectives">1.5.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.2-Lists">1.5.2 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3-Dictionaries">1.5.3 Dictionaries</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.1-Example:-Shopping-List">1.5.3.1 Example: Shopping List</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">1.5.3.2 Another Example: Chemical Symbols and Element Names</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.3.3-Dictionary-of-Dictionaries">1.5.3.3 Dictionary of Dictionaries</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4-Enumerate">1.5.4 Enumerate</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.1-Lists">1.5.4.1 Lists</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.html#1.5.4.2-Dictionaries">1.5.4.2 Dictionaries</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.6-Linear-Algebra-with-Numpy-and-Scipy"><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a><a class="anchor-link" href="#1.6-Linear-Algebra-with-Numpy-and-Scipy">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.1-Learning-Objectives">1.6.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2-NumPy-Arrays">1.6.2 NumPy Arrays</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.1-Getting-Started">1.6.2.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.2-Creating-Arrays-in-Neat-Ways">1.6.2.2 Creating Arrays in Neat Ways</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.3-Operations-on-Arrays">1.6.2.3 Operations on Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.4-Universal-Functions">1.6.2.4 Universal Functions</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.5-Copying-Arrays">1.6.2.5 Copying Arrays</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.6-Indexing,-Slicing,-and-Iterating">1.6.2.6 Indexing, Slicing, and Iterating</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.7-Complex-Numbers">1.6.2.7 Complex Numbers</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html#1.6.2.8-Integrating-Everything-Together">1.6.2.8 Integrating Everything Together</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.7-Visualization-with-matplotlib"><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html">1.7 Visualization with matplotlib</a><a class="anchor-link" href="#1.7-Visualization-with-matplotlib">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.1-Learning-Objectives">1.7.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2-Matplotlib-Basics">1.7.2 Matplotlib Basics</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.1-3b-i.-Customizing-Plots">1.7.2.1 3b-i. Customizing Plots</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.2.2-3b-ii.-Plotting-multiple-lines">1.7.2.2 3b-ii. Plotting multiple lines</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.07-Matplotlib.html#1.7.3-Publication-Quality-Figures">1.7.3 Publication Quality Figures</a></li>
-</ul>
-<h3 id="1.8-Manipulating-Data-with-Pandas"><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html">1.8 Manipulating Data with Pandas</a><a class="anchor-link" href="#1.8-Manipulating-Data-with-Pandas">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.1-Learning-Objectives">1.8.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2-Working-with-Data-Using-Pandas">1.8.2 Working with Data Using Pandas</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.1-Loading-and-Inspecting-Data">1.8.2.1 Loading and Inspecting Data</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.2-Computing-Summary-Statistics">1.8.2.2 Computing Summary Statistics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.2.3-Combining-Pandas-and-Matplotlib">1.8.2.3 Combining Pandas and Matplotlib</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3-Investment-Strategies">1.8.3 Investment Strategies</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.1-Getting-Started">1.8.3.1 Getting Started</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.08-Pandas.html#1.8.3.2-Portfolio-Calculator">1.8.3.2 Portfolio Calculator</a></li>
-</ul>
-</li>
-<li>Markdown Links<ul>
-<li><a href="http://highered.mheducation.com/sites/0073401331/student_view0/data_sets.html">the publisher</a></li>
-<li><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html">10 minutes to pandas</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.9-Functions-as-Arguments"><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html">1.9 Functions as Arguments</a><a class="anchor-link" href="#1.9-Functions-as-Arguments">&#182;</a></h3><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.1-Learning-Objectives">1.9.1 Learning Objectives</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2-Functions-passed-to-Functions">1.9.2 Functions passed to Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.1-Motivating-Example:-Midpoint-Integration">1.9.2.1 Motivating Example: Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.2-Convergence-Analysis">1.9.2.2 Convergence Analysis</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.2.3-A-Fancier-Integration-Function">1.9.2.3 A Fancier Integration Function</a></li>
-</ul>
-</li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3-Lambda-Functions">1.9.3 Lambda Functions</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.1-Example:-Lambda-Functions-and-Midpoint-Integration">1.9.3.1 Example: Lambda Functions and Midpoint Integration</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html#1.9.3.2-4c-ii.-Extension-to-Two-Dimensional-Functions">1.9.3.2 4c-ii. Extension to Two Dimensional Functions</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="1.10-Testing-and-Debugging-in-Python"><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html">1.10 Testing and Debugging in Python</a><a class="anchor-link" href="#1.10-Testing-and-Debugging-in-Python">&#182;</a></h3>
-<pre><code>- [1.10.1 Learning Objectives](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Learning-Objectives)
-</code></pre>
+<p><!--NOTEBOOK_HEADER--><em>This notebook contains material for CBE 20258 Numerical and Statistical Analysis taught at the University of Notre Dame. (c) Professors Alexander Dowling, Ryan McClarren, and Yamil Colón. This page <a href="https://ndcbe.github.io/cbe-xx258">cbe-xx258</a> in addition to the entire course contents are available <a href="https://github.com/ndcbe/cbe-xx258">on Github</a>.</em></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.05-Lists-Dictionaries-Enumerate.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># IMPORT DATA FILES USED BY THIS NOTEBOOK</span>
+<span class="kn">import</span> <span class="nn">os</span><span class="o">,</span>  <span class="nn">requests</span>
+
+<span class="n">file_links</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;data/ChemicalSymbols.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;https://ndcbe.github.io/cbe-xx258/data/ChemicalSymbols.csv&quot;</span><span class="p">)]</span>
+
+<span class="c1"># This cell has been added by nbpages. Run this cell to download data files required for this notebook.</span>
+
+<span class="k">for</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">fileurl</span> <span class="ow">in</span> <span class="n">file_links</span><span class="p">:</span>
+    <span class="n">stem</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">stem</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">stem</span><span class="p">):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">stem</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">fileurl</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="1.5-List,-Dictionaries,-and-Enumeration">1.5 List, Dictionaries, and Enumeration<a class="anchor-link" href="#1.5-List,-Dictionaries,-and-Enumeration">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Reference</strong>: Chapters 2 and 5 of <em>Computational Nuclear Engineering and Radiological Science Using Python</em>, R. McClarren (2018)</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.5.1-Learning-Objectives">1.5.1 Learning Objectives<a class="anchor-link" href="#1.5.1-Learning-Objectives">&#182;</a></h2><p>After studying this notebook, completing the activities, and asking questions in class, you should be able to:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.5.2-Lists">1.5.2 Lists<a class="anchor-link" href="#1.5.2-Lists">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also do other fun stuff with for loops.  For instance, you can have the control variable take on non-numeric things:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#silly hat code</span>
+<span class="n">hats</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;fedora&quot;</span><span class="p">,</span><span class="s2">&quot;trilby&quot;</span><span class="p">,</span><span class="s2">&quot;porkpie&quot;</span><span class="p">,</span><span class="s2">&quot;tam o&#39;shanter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Phrygian cap&quot;</span><span class="p">,</span><span class="s2">&quot;Beefeaters&#39; hat&quot;</span><span class="p">,</span><span class="s2">&quot;sombrero&quot;</span><span class="p">]</span>
+<span class="n">days</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span><span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span><span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span><span class="s2">&quot;Thursday&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Friday&quot;</span><span class="p">,</span><span class="s2">&quot;Saturday&quot;</span><span class="p">,</span><span class="s2">&quot;Sunday&quot;</span><span class="p">]</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">today</span> <span class="ow">in</span> <span class="n">hats</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It is&quot;</span><span class="p">,</span><span class="n">days</span><span class="p">[</span><span class="n">count</span><span class="p">],</span><span class="s2">&quot;and I will wear a&quot;</span><span class="p">,</span><span class="n">today</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It is Monday and I will wear a fedora
+It is Tuesday and I will wear a trilby
+It is Wednesday and I will wear a porkpie
+It is Thursday and I will wear a tam o&#39;shanter
+It is Friday and I will wear a Phrygian cap
+It is Saturday and I will wear a Beefeaters&#39; hat
+It is Sunday and I will wear a sombrero
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice what else we did here: we defined a list called <code>days</code> that contained strings for the names of the days of the week.  Inside our <code>for</code> loop we had a numeric variable that kept track of what number the day of the week was (0 for Monday in this case).  Then when we access days[count] it returns the string in position count.</p>
+<p>We can go one step beyond and plan our wardrobe a month in advance using random numbers. The code below generates a random integer between 0 and 6:</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">my_random_number</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_random_number</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Modify the code below to loop over 30 days. For each day, randomly select which hat to wear.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#silly hat code</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">hats</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;fedora&quot;</span><span class="p">,</span><span class="s2">&quot;trilby&quot;</span><span class="p">,</span><span class="s2">&quot;porkpie&quot;</span><span class="p">,</span><span class="s2">&quot;tam o&#39;shanter&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Phrygian cap&quot;</span><span class="p">,</span><span class="s2">&quot;Beefeaters&#39; hat&quot;</span><span class="p">,</span><span class="s2">&quot;sombrero&quot;</span><span class="p">]</span>
+<span class="n">days</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span><span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span><span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span><span class="s2">&quot;Thursday&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Friday&quot;</span><span class="p">,</span><span class="s2">&quot;Saturday&quot;</span><span class="p">,</span><span class="s2">&quot;Sunday&quot;</span><span class="p">]</span>
+
+<span class="c1"># loop over 30 days</span>
+<span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It is Monday and I will wear a tam o&#39;shanter
+It is Tuesday and I will wear a Phrygian cap
+It is Wednesday and I will wear a Beefeaters&#39; hat
+It is Thursday and I will wear a Beefeaters&#39; hat
+It is Friday and I will wear a Phrygian cap
+It is Saturday and I will wear a porkpie
+It is Sunday and I will wear a trilby
+It is Monday and I will wear a trilby
+It is Tuesday and I will wear a fedora
+It is Wednesday and I will wear a sombrero
+It is Thursday and I will wear a tam o&#39;shanter
+It is Friday and I will wear a sombrero
+It is Saturday and I will wear a trilby
+It is Sunday and I will wear a porkpie
+It is Monday and I will wear a Phrygian cap
+It is Tuesday and I will wear a tam o&#39;shanter
+It is Wednesday and I will wear a Phrygian cap
+It is Thursday and I will wear a Beefeaters&#39; hat
+It is Friday and I will wear a Phrygian cap
+It is Saturday and I will wear a trilby
+It is Sunday and I will wear a Phrygian cap
+It is Monday and I will wear a Beefeaters&#39; hat
+It is Tuesday and I will wear a trilby
+It is Wednesday and I will wear a Beefeaters&#39; hat
+It is Thursday and I will wear a Phrygian cap
+It is Friday and I will wear a Phrygian cap
+It is Saturday and I will wear a Beefeaters&#39; hat
+It is Sunday and I will wear a tam o&#39;shanter
+It is Monday and I will wear a Beefeaters&#39; hat
+It is Tuesday and I will wear a trilby
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Lists</strong> are like vectors in MATLAB, except, as you can see above, we can store more than just numbers in them. We will talk about using a package <code>numpy</code> to represent vectors and matrices next class session.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Fix the three examples below to count from 1 to 10.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Attempt 1</span>
+<span class="n">N</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">N</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Attempt 2</span>
+<span class="n">N</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">N</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">N</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+11
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Attempt 3</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.5.3-Dictionaries">1.5.3 Dictionaries<a class="anchor-link" href="#1.5.3-Dictionaries">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So far, we have used lists to store a sequence of numbers or more generally Python objects. Lists (and NumPy arrays - stay tuned) access elements by position and have an inherent ordering.</p>
+<p>A dictionary is a set of <strong>key</strong> : <strong>value</strong> pairs. You can think of a dictionary as a fancy list that instead of accessing via the position, you access using a key.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#simple dictionary</span>
+<span class="n">days_of_week</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span> <span class="s2">&quot;T&quot;</span><span class="p">:</span><span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;W&quot;</span><span class="p">:</span><span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">:</span><span class="s2">&quot;Thursday&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;F&quot;</span><span class="p">:</span><span class="s2">&quot;Friday&quot;</span><span class="p">,</span> <span class="s2">&quot;S&quot;</span><span class="p">:</span><span class="s2">&quot;Saturday&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;U&quot;</span><span class="p">:</span><span class="s2">&quot;Sunday&quot;</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Key M gives&quot;</span><span class="p">,</span> <span class="n">days_of_week</span><span class="p">[</span><span class="s2">&quot;M&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Key R gives&quot;</span><span class="p">,</span> <span class="n">days_of_week</span><span class="p">[</span><span class="s2">&quot;R&quot;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Key M gives Monday
+Key R gives Thursday
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Store the value for key <tt>F</tt> in the variable <tt>answer</tt>.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Calling <code>days_of_week.keys()</code> returns a special list of the keys of the dictionary.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">days_of_week</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([&#39;M&#39;, &#39;T&#39;, &#39;W&#39;, &#39;R&#39;, &#39;F&#39;, &#39;S&#39;, &#39;U&#39;])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also check if <code>G</code> is a valid key for the dictionary.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;G&quot;</span> <span class="ow">in</span> <span class="n">days_of_week</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="c1">#is G a key in days_of_week?</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Main idea:</strong> With dictionaries, we access elements using the <strong>key</strong>. In contrast, we access elements of strings, lists, and Numpy arrays using the position.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.3.1-Example:-Shopping-List">1.5.3.1 Example: Shopping List<a class="anchor-link" href="#1.5.3.1-Example:-Shopping-List">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Create a dictionary to store the following shopping list. The keys should be the item names and the elements should be the quantity of the items.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Testing-Your-Code">1.10.1 Testing Your Code</a><ul>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.1-Test-0:-Takes-Inputs-as-Advertised?">1.10.1.1 Test 0: Takes Inputs as Advertised?</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.2-Test-1:-Initial-Condition">1.10.1.2 Test 1: Initial Condition</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.3-Test-2:-Asymptotics">1.10.1.3 Test 2: Asymptotics</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1.4-Test-3:-Check-a-Few-Inputs">1.10.1.4 Test 3: Check a Few Inputs</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.1-Debugging-is-a-Mindset">1.10.1 Debugging is a Mindset</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.2-Test-2">1.10.2 Test 2</a></li>
-<li><a href="https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html#1.10.3-Test-3">1.10.3 Test 3</a></li>
-</ul>
-</li>
+<li>1.5 bannas (pounds)</li>
+<li>3 cans of soup</li>
+<li>6 apples</li>
+<li>2.3 pork tenderloin (pounds)</li>
 </ul>
 
 </div>
 </div>
 </div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;bananas (pounds)&#39;: 1.5, &#39;cans of soup&#39;: 3, &#39;apples&#39;: 6, &#39;pork tenderloin (pounds)&#39;: 2.3}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">1.5.3.2 Another Example: Chemical Symbols and Element Names<a class="anchor-link" href="#1.5.3.2-Another-Example:-Chemical-Symbols-and-Element-Names">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below is code that parses <code>ChemicalSymbols.csv</code> and stores the data in dictionary.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">element_dict</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">#create a blank dictionary</span>
+
+<span class="c1"># this block will only execute if the file opens</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;./data/ChemicalSymbols.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span> 
+    <span class="n">chemreader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">chemreader</span><span class="p">:</span> <span class="c1"># have for loop that loops over each line</span>
+        <span class="n">element_dict</span><span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># add a key:value pair</span>
+
+<span class="c1"># Ask user to enter a chemical symbol        </span>
+<span class="n">key</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a valid chemical symbol: &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">element_dict</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="n">element_dict</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not a valid element&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Enter a valid chemical symbol: Ar
+Ar is Argon
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,255,0,0.05) ; padding: 10px; border: 1px solid darkgreen;"> 
+<b>Home Activity</b>: Run the code above twice. Try first with a valid chemical symbol. Then try with a chemical symbol not on the periodic table of elements.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also print out the dictionary.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">element_dict</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;Ac&#39;: &#39;Actinium&#39;, &#39;Ag&#39;: &#39;Silver&#39;, &#39;Al&#39;: &#39;Aluminium (Aluminum)&#39;, &#39;Am&#39;: &#39;Americium&#39;, &#39;Ar&#39;: &#39;Argon&#39;, &#39;As&#39;: &#39;Arsenic&#39;, &#39;At&#39;: &#39;Astatine&#39;, &#39;Au&#39;: &#39;Gold&#39;, &#39;B&#39;: &#39;Boron&#39;, &#39;Ba&#39;: &#39;Barium&#39;, &#39;Be&#39;: &#39;Beryllium&#39;, &#39;Bh&#39;: &#39;Bohrium&#39;, &#39;Bi&#39;: &#39;Bismuth&#39;, &#39;Bk&#39;: &#39;Berkelium&#39;, &#39;Br&#39;: &#39;Bromine&#39;, &#39;C&#39;: &#39;Carbon&#39;, &#39;Ca&#39;: &#39;Calcium&#39;, &#39;Cd&#39;: &#39;Cadmium&#39;, &#39;Ce&#39;: &#39;Cerium&#39;, &#39;Cf&#39;: &#39;Californium&#39;, &#39;Cl&#39;: &#39;Chlorine&#39;, &#39;Cm&#39;: &#39;Curium&#39;, &#39;Cn&#39;: &#39;Copernicium&#39;, &#39;Co&#39;: &#39;Cobalt&#39;, &#39;Cr&#39;: &#39;Chromium&#39;, &#39;Cs&#39;: &#39;Caesium (Cesium)&#39;, &#39;Cu&#39;: &#39;Copper&#39;, &#39;Db&#39;: &#39;Dubnium&#39;, &#39;Ds&#39;: &#39;Darmstadtium&#39;, &#39;Dy&#39;: &#39;Dysprosium&#39;, &#39;Er&#39;: &#39;Erbium&#39;, &#39;Es&#39;: &#39;Einsteinium&#39;, &#39;Eu&#39;: &#39;Europium&#39;, &#39;F&#39;: &#39;Fluorine&#39;, &#39;Fe&#39;: &#39;Iron&#39;, &#39;Fl&#39;: &#39;Flerovium&#39;, &#39;Fm&#39;: &#39;Fermium&#39;, &#39;Fr&#39;: &#39;Francium&#39;, &#39;Ga&#39;: &#39;Gallium&#39;, &#39;Gd&#39;: &#39;Gadolinium&#39;, &#39;Ge&#39;: &#39;Germanium&#39;, &#39;H&#39;: &#39;Hydrogen&#39;, &#39;He&#39;: &#39;Helium&#39;, &#39;Hf&#39;: &#39;Hafnium&#39;, &#39;Hg&#39;: &#39;Mercury&#39;, &#39;Ho&#39;: &#39;Holmium&#39;, &#39;Hs&#39;: &#39;Hassium&#39;, &#39;I&#39;: &#39;Iodine&#39;, &#39;In&#39;: &#39;Indium&#39;, &#39;Ir&#39;: &#39;Iridium&#39;, &#39;K&#39;: &#39;Potassium&#39;, &#39;Kr&#39;: &#39;Krypton&#39;, &#39;La&#39;: &#39;Lanthanum&#39;, &#39;Li&#39;: &#39;Lithium&#39;, &#39;Lr&#39;: &#39;Lawrencium&#39;, &#39;Lu&#39;: &#39;Lutetium&#39;, &#39;Lv&#39;: &#39;Livermorium&#39;, &#39;Md&#39;: &#39;Mendelevium&#39;, &#39;Mg&#39;: &#39;Magnesium&#39;, &#39;Mn&#39;: &#39;Manganese&#39;, &#39;Mo&#39;: &#39;Molybdenum&#39;, &#39;Mt&#39;: &#39;Meitnerium&#39;, &#39;N&#39;: &#39;Nitrogen&#39;, &#39;Na&#39;: &#39;Sodium&#39;, &#39;Nb&#39;: &#39;Niobium&#39;, &#39;Nd&#39;: &#39;Neodymium&#39;, &#39;Ne&#39;: &#39;Neon&#39;, &#39;Ni&#39;: &#39;Nickel&#39;, &#39;No&#39;: &#39;Nobelium&#39;, &#39;Np&#39;: &#39;Neptunium&#39;, &#39;O&#39;: &#39;Oxygen&#39;, &#39;Os&#39;: &#39;Osmium&#39;, &#39;P&#39;: &#39;Phosphorus&#39;, &#39;Pa&#39;: &#39;Protactinium&#39;, &#39;Pb&#39;: &#39;Lead&#39;, &#39;Pd&#39;: &#39;Palladium&#39;, &#39;Pm&#39;: &#39;Promethium&#39;, &#39;Po&#39;: &#39;Polonium&#39;, &#39;Pr&#39;: &#39;Praseodymium&#39;, &#39;Pt&#39;: &#39;Platinum&#39;, &#39;Pu&#39;: &#39;Plutonium&#39;, &#39;Ra&#39;: &#39;Radium&#39;, &#39;Rb&#39;: &#39;Rubidium&#39;, &#39;Re&#39;: &#39;Rhenium&#39;, &#39;Rf&#39;: &#39;Rutherfordium&#39;, &#39;Rg&#39;: &#39;Roentgenium&#39;, &#39;Rh&#39;: &#39;Rhodium&#39;, &#39;Rn&#39;: &#39;Radon&#39;, &#39;Ru&#39;: &#39;Ruthenium&#39;, &#39;S&#39;: &#39;Sulfur (Sulphur)&#39;, &#39;Sb&#39;: &#39;Antimony&#39;, &#39;Sc&#39;: &#39;Scandium&#39;, &#39;Se&#39;: &#39;Selenium&#39;, &#39;Sg&#39;: &#39;Seaborgium&#39;, &#39;Si&#39;: &#39;Silicon&#39;, &#39;Sm&#39;: &#39;Samarium&#39;, &#39;Sn&#39;: &#39;Tin&#39;, &#39;Sr&#39;: &#39;Strontium&#39;, &#39;Ta&#39;: &#39;Tantalum&#39;, &#39;Tb&#39;: &#39;Terbium&#39;, &#39;Tc&#39;: &#39;Technetium&#39;, &#39;Te&#39;: &#39;Tellurium&#39;, &#39;Th&#39;: &#39;Thorium&#39;, &#39;Ti&#39;: &#39;Titanium&#39;, &#39;Tl&#39;: &#39;Thallium&#39;, &#39;Tm&#39;: &#39;Thulium&#39;, &#39;U&#39;: &#39;Uranium&#39;, &#39;Uuo&#39;: &#39;Ununoctium&#39;, &#39;Uup&#39;: &#39;Ununpentium&#39;, &#39;Uus&#39;: &#39;Ununseptium&#39;, &#39;Uut&#39;: &#39;Ununtrium&#39;, &#39;V&#39;: &#39;Vanadium&#39;, &#39;W&#39;: &#39;Tungsten&#39;, &#39;Xe&#39;: &#39;Xenon&#39;, &#39;Y&#39;: &#39;Yttrium&#39;, &#39;Yb&#39;: &#39;Ytterbium&#39;, &#39;Zn&#39;: &#39;Zinc&#39;, &#39;Zr&#39;: &#39;Zirconium&#39;}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">element_dict</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;Ac&#39;: &#39;Actinium&#39;,
+ &#39;Ag&#39;: &#39;Silver&#39;,
+ &#39;Al&#39;: &#39;Aluminium (Aluminum)&#39;,
+ &#39;Am&#39;: &#39;Americium&#39;,
+ &#39;Ar&#39;: &#39;Argon&#39;,
+ &#39;As&#39;: &#39;Arsenic&#39;,
+ &#39;At&#39;: &#39;Astatine&#39;,
+ &#39;Au&#39;: &#39;Gold&#39;,
+ &#39;B&#39;: &#39;Boron&#39;,
+ &#39;Ba&#39;: &#39;Barium&#39;,
+ &#39;Be&#39;: &#39;Beryllium&#39;,
+ &#39;Bh&#39;: &#39;Bohrium&#39;,
+ &#39;Bi&#39;: &#39;Bismuth&#39;,
+ &#39;Bk&#39;: &#39;Berkelium&#39;,
+ &#39;Br&#39;: &#39;Bromine&#39;,
+ &#39;C&#39;: &#39;Carbon&#39;,
+ &#39;Ca&#39;: &#39;Calcium&#39;,
+ &#39;Cd&#39;: &#39;Cadmium&#39;,
+ &#39;Ce&#39;: &#39;Cerium&#39;,
+ &#39;Cf&#39;: &#39;Californium&#39;,
+ &#39;Cl&#39;: &#39;Chlorine&#39;,
+ &#39;Cm&#39;: &#39;Curium&#39;,
+ &#39;Cn&#39;: &#39;Copernicium&#39;,
+ &#39;Co&#39;: &#39;Cobalt&#39;,
+ &#39;Cr&#39;: &#39;Chromium&#39;,
+ &#39;Cs&#39;: &#39;Caesium (Cesium)&#39;,
+ &#39;Cu&#39;: &#39;Copper&#39;,
+ &#39;Db&#39;: &#39;Dubnium&#39;,
+ &#39;Ds&#39;: &#39;Darmstadtium&#39;,
+ &#39;Dy&#39;: &#39;Dysprosium&#39;,
+ &#39;Er&#39;: &#39;Erbium&#39;,
+ &#39;Es&#39;: &#39;Einsteinium&#39;,
+ &#39;Eu&#39;: &#39;Europium&#39;,
+ &#39;F&#39;: &#39;Fluorine&#39;,
+ &#39;Fe&#39;: &#39;Iron&#39;,
+ &#39;Fl&#39;: &#39;Flerovium&#39;,
+ &#39;Fm&#39;: &#39;Fermium&#39;,
+ &#39;Fr&#39;: &#39;Francium&#39;,
+ &#39;Ga&#39;: &#39;Gallium&#39;,
+ &#39;Gd&#39;: &#39;Gadolinium&#39;,
+ &#39;Ge&#39;: &#39;Germanium&#39;,
+ &#39;H&#39;: &#39;Hydrogen&#39;,
+ &#39;He&#39;: &#39;Helium&#39;,
+ &#39;Hf&#39;: &#39;Hafnium&#39;,
+ &#39;Hg&#39;: &#39;Mercury&#39;,
+ &#39;Ho&#39;: &#39;Holmium&#39;,
+ &#39;Hs&#39;: &#39;Hassium&#39;,
+ &#39;I&#39;: &#39;Iodine&#39;,
+ &#39;In&#39;: &#39;Indium&#39;,
+ &#39;Ir&#39;: &#39;Iridium&#39;,
+ &#39;K&#39;: &#39;Potassium&#39;,
+ &#39;Kr&#39;: &#39;Krypton&#39;,
+ &#39;La&#39;: &#39;Lanthanum&#39;,
+ &#39;Li&#39;: &#39;Lithium&#39;,
+ &#39;Lr&#39;: &#39;Lawrencium&#39;,
+ &#39;Lu&#39;: &#39;Lutetium&#39;,
+ &#39;Lv&#39;: &#39;Livermorium&#39;,
+ &#39;Md&#39;: &#39;Mendelevium&#39;,
+ &#39;Mg&#39;: &#39;Magnesium&#39;,
+ &#39;Mn&#39;: &#39;Manganese&#39;,
+ &#39;Mo&#39;: &#39;Molybdenum&#39;,
+ &#39;Mt&#39;: &#39;Meitnerium&#39;,
+ &#39;N&#39;: &#39;Nitrogen&#39;,
+ &#39;Na&#39;: &#39;Sodium&#39;,
+ &#39;Nb&#39;: &#39;Niobium&#39;,
+ &#39;Nd&#39;: &#39;Neodymium&#39;,
+ &#39;Ne&#39;: &#39;Neon&#39;,
+ &#39;Ni&#39;: &#39;Nickel&#39;,
+ &#39;No&#39;: &#39;Nobelium&#39;,
+ &#39;Np&#39;: &#39;Neptunium&#39;,
+ &#39;O&#39;: &#39;Oxygen&#39;,
+ &#39;Os&#39;: &#39;Osmium&#39;,
+ &#39;P&#39;: &#39;Phosphorus&#39;,
+ &#39;Pa&#39;: &#39;Protactinium&#39;,
+ &#39;Pb&#39;: &#39;Lead&#39;,
+ &#39;Pd&#39;: &#39;Palladium&#39;,
+ &#39;Pm&#39;: &#39;Promethium&#39;,
+ &#39;Po&#39;: &#39;Polonium&#39;,
+ &#39;Pr&#39;: &#39;Praseodymium&#39;,
+ &#39;Pt&#39;: &#39;Platinum&#39;,
+ &#39;Pu&#39;: &#39;Plutonium&#39;,
+ &#39;Ra&#39;: &#39;Radium&#39;,
+ &#39;Rb&#39;: &#39;Rubidium&#39;,
+ &#39;Re&#39;: &#39;Rhenium&#39;,
+ &#39;Rf&#39;: &#39;Rutherfordium&#39;,
+ &#39;Rg&#39;: &#39;Roentgenium&#39;,
+ &#39;Rh&#39;: &#39;Rhodium&#39;,
+ &#39;Rn&#39;: &#39;Radon&#39;,
+ &#39;Ru&#39;: &#39;Ruthenium&#39;,
+ &#39;S&#39;: &#39;Sulfur (Sulphur)&#39;,
+ &#39;Sb&#39;: &#39;Antimony&#39;,
+ &#39;Sc&#39;: &#39;Scandium&#39;,
+ &#39;Se&#39;: &#39;Selenium&#39;,
+ &#39;Sg&#39;: &#39;Seaborgium&#39;,
+ &#39;Si&#39;: &#39;Silicon&#39;,
+ &#39;Sm&#39;: &#39;Samarium&#39;,
+ &#39;Sn&#39;: &#39;Tin&#39;,
+ &#39;Sr&#39;: &#39;Strontium&#39;,
+ &#39;Ta&#39;: &#39;Tantalum&#39;,
+ &#39;Tb&#39;: &#39;Terbium&#39;,
+ &#39;Tc&#39;: &#39;Technetium&#39;,
+ &#39;Te&#39;: &#39;Tellurium&#39;,
+ &#39;Th&#39;: &#39;Thorium&#39;,
+ &#39;Ti&#39;: &#39;Titanium&#39;,
+ &#39;Tl&#39;: &#39;Thallium&#39;,
+ &#39;Tm&#39;: &#39;Thulium&#39;,
+ &#39;U&#39;: &#39;Uranium&#39;,
+ &#39;Uuo&#39;: &#39;Ununoctium&#39;,
+ &#39;Uup&#39;: &#39;Ununpentium&#39;,
+ &#39;Uus&#39;: &#39;Ununseptium&#39;,
+ &#39;Uut&#39;: &#39;Ununtrium&#39;,
+ &#39;V&#39;: &#39;Vanadium&#39;,
+ &#39;W&#39;: &#39;Tungsten&#39;,
+ &#39;Xe&#39;: &#39;Xenon&#39;,
+ &#39;Y&#39;: &#39;Yttrium&#39;,
+ &#39;Yb&#39;: &#39;Ytterbium&#39;,
+ &#39;Zn&#39;: &#39;Zinc&#39;,
+ &#39;Zr&#39;: &#39;Zirconium&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.3.3-Dictionary-of-Dictionaries">1.5.3.3 Dictionary of Dictionaries<a class="anchor-link" href="#1.5.3.3-Dictionary-of-Dictionaries">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can make dictionaries even more powerful if we make a dictionary of dictionaries.</p>
+<p><strong>Top Level</strong>. Day of the week.</p>
+<ul>
+<li>Key: symbol "M", "T", etc.</li>
+<li>Value: Another dictionary!</li>
+</ul>
+<p><strong>Second Level</strong>. Data for each day.</p>
+<ul>
+<li>Keys: "name", "weekday", "weekend"</li>
+<li>Values: string, boolean (True or False), boolean</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#simple dictionary of dictionaries</span>
+<span class="n">days_of_week</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">},</span>
+                <span class="s2">&quot;T&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">},</span>
+                <span class="s2">&quot;W&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">},</span>
+                <span class="s2">&quot;R&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Thursday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">},</span>
+                <span class="s2">&quot;F&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Friday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">},</span>
+                <span class="s2">&quot;S&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Saturday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">},</span>
+                <span class="s2">&quot;U&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Sunday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s2">&quot;weekend&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">}}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The days that are weekdays are&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">days_of_week</span><span class="p">:</span> <span class="c1">#for loop over dictionary, loops over keys</span>
+    <span class="k">if</span> <span class="n">days_of_week</span><span class="p">[</span><span class="n">day</span><span class="p">][</span><span class="s2">&quot;weekday&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">days_of_week</span><span class="p">[</span><span class="n">day</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">],</span><span class="s2">&quot;is a weekday.&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The days that are weekend days are&quot;</span><span class="p">)</span>        
+<span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">days_of_week</span><span class="p">:</span> <span class="c1">#for loop over dictionary, loops over keys</span>
+    <span class="k">if</span> <span class="n">days_of_week</span><span class="p">[</span><span class="n">day</span><span class="p">][</span><span class="s2">&quot;weekend&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">days_of_week</span><span class="p">[</span><span class="n">day</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">],</span><span class="s2">&quot;is a weekend, whoop.&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The days that are weekdays are
+Monday is a weekday.
+Tuesday is a weekday.
+Wednesday is a weekday.
+Thursday is a weekday.
+Friday is a weekday.
+The days that are weekend days are
+Saturday is a weekend, whoop.
+Sunday is a weekend, whoop.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that when you loop over a dictionary in a for loop, the loop variable will get each of the keys of the dictionary.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The dictionary has been modified to include the day name in Spanish.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#more complicated dictionary of dictionaries</span>
+<span class="n">days_of_week2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Lunes&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;T&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Martes&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;W&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Miércoles&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;R&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Thursday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Jueves&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;F&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Friday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Viernes&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;S&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Saturday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Sábado&quot;</span><span class="p">},</span>
+                <span class="s2">&quot;U&quot;</span><span class="p">:{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;Sunday&quot;</span><span class="p">,</span><span class="s2">&quot;weekday&quot;</span><span class="p">:</span><span class="kc">False</span><span class="p">,</span><span class="s2">&quot;Spanish&quot;</span><span class="p">:</span><span class="s2">&quot;Domingo&quot;</span><span class="p">}}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,0,255,0.05) ; padding: 10px; border: 1px solid darkblue;"> 
+<b>Class Activity</b>: With a partner, write pseudocode to loop over the days of the week. Print off the day name in Spanish and whether it is a weekend or weekday.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style="background-color: rgba(0,0,255,0.05) ; padding: 10px; border: 1px solid darkblue;"> 
+<b>Class Activity</b>: Implement your pseudocode in Python.
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YOUR SOLUTION HERE</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.5.4-Enumerate">1.5.4 Enumerate<a class="anchor-link" href="#1.5.4-Enumerate">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.4.1-Lists">1.5.4.1 Lists<a class="anchor-link" href="#1.5.4.1-Lists">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's see some syntax for growing lists.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a list with nothing</span>
+
+<span class="n">students</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># add a student</span>
+<span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Joe Smith&quot;</span><span class="p">)</span>
+
+<span class="c1"># add another student</span>
+<span class="n">students</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Jane Doe&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">students</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>How to loop for the list? Let's review.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Approach 1</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">students</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Approach 2</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot;: &quot;</span><span class="p">,</span><span class="n">students</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Can simply the syntax? It is really convienent to access the index with <code>i</code> and the student with <code>s</code>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">students</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot;: &quot;</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.5.4.2-Dictionaries">1.5.4.2 Dictionaries<a class="anchor-link" href="#1.5.4.2-Dictionaries">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+
+
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><!--NAVIGATION-->
+&lt; <a href="https://ndcbe.github.io/cbe-xx258/01.04-Functions-scoping.html">1.4 Functions, Scoping, and Other Fun Stuff</a> | <a href="toc.html">Contents</a> | <a href="https://ndcbe.github.io/cbe-xx258/01.06-NumPy.html">1.6 Linear Algebra with Numpy and Scipy</a> &gt;<p><a href="https://colab.research.google.com/github/ndcbe/cbe-xx258/blob/master/docs/01.05-Lists-Dictionaries-Enumerate.ipynb"> <img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open in Google Colaboratory"></a><p><a href="https://ndcbe.github.io/cbe-xx258/01.05-Lists-Dictionaries-Enumerate.ipynb"> <img align="left" src="https://img.shields.io/badge/Github-Download-blue.svg" alt="Download" title="Download Notebook"></a></p>
+
+</div>
+</div>
+</div>
+
+
     </div>
   </div>
 </body>
