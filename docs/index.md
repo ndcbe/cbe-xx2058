@@ -30,7 +30,7 @@
 
 ### [Chapter 7.0 Numeric Integration](https://ndcbe.github.io/cbe-xx258/07.00-Numeric-Integration.html)
 
-### [Chapter 8.0 Linear Algebra](https://ndcbe.github.io/cbe-xx258/08.00-Descriptive-Statistics.html)
+### [Chapter 8.0 Descriptive Statistics and Data Visualization](https://ndcbe.github.io/cbe-xx258/08.00-Descriptive-Statistics.html)
 
 ### [Chapter 9.0 Probability Theory](https://ndcbe.github.io/cbe-xx258/09.00-Probability.html)
 
