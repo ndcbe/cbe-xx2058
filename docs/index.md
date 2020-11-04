@@ -18,3 +18,33 @@
 - [1.9 Functions as Arguments](https://ndcbe.github.io/cbe-xx258/01.09-Functions-as-Arguments.html)
 - [1.10 Testing and Debugging in Python](https://ndcbe.github.io/cbe-xx258/01.10-Testing-and-Debugging.html)
 
+### [Chapter 2.0 Linear Algebra](https://ndcbe.github.io/cbe-xx258/02.00-Linear-Algebra.html)
+
+### [Chapter 3.0 Numeric Linear Algebra](https://ndcbe.github.io/cbe-xx258/03.00-Numeric-Linear-Algebra.html)
+
+### [Chapter 4.0 Algorithm Building Blocks](https://ndcbe.github.io/cbe-xx258/04.00-Algorithm-Building-Blocks.html)
+
+### [Chapter 5.0 Nonlinear Systems of Equations](https://ndcbe.github.io/cbe-xx258/05.00-Nonlinear-Systems-Equations.html)
+
+### [Chapter 6.0 Computational Optimization](https://ndcbe.github.io/cbe-xx258/06.00-Computational-Optimization.html)
+
+### [Chapter 7.0 Numeric Integration](https://ndcbe.github.io/cbe-xx258/07.00-Numeric-Integration.html)
+
+### [Chapter 8.0 Linear Algebra](https://ndcbe.github.io/cbe-xx258/08.00-Descriptive-Statistics.html)
+
+### [Chapter 9.0 Probability Theory](https://ndcbe.github.io/cbe-xx258/09.00-Probability.html)
+
+### [Chapter 10.0 Common Probability Distributions](https://ndcbe.github.io/cbe-xx258/10.00-Probability-Distribtions.html)
+
+### [Chapter 11.0 Uncertainty and Error Propagation](https://ndcbe.github.io/cbe-xx258/11.00-Uncertainty-Error-Propagation.html)
+
+### [Chapter 12.0 Statistical Inference](https://ndcbe.github.io/cbe-xx258/12.00-Statistical-Inference.html)
+
+### [Chapter 13.0 Regression](https://ndcbe.github.io/cbe-xx258/13.00-Regression.html)
+
+### [Chapter 14.0 Advanced Regression](https://ndcbe.github.io/cbe-xx258/14.00-Advanced-Regression.html)
+
+### [Chapter 15.0 Design of Experiments](https://ndcbe.github.io/cbe-xx258/15.00-Design-of-Experiments.html)
+
+### [Chapter 16.0 Bayesian Statistics](https://ndcbe.github.io/cbe-xx258/16.00-Bayesian-Statistics.html)
+
